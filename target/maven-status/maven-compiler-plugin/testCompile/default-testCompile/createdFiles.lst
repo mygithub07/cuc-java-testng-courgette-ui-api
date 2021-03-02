@@ -1,9 +1,2 @@
 com/test/AcceptanceIT.class
-com/test/stepdefs/PageObjects.class
-com/test/support/BasePage.class
-com/test/support/DriverFactory.class
-com/test/stepdefs/InitialIT.class
-com/test/support/ChromeManager.class
-com/test/support/DriverManager.class
-com/test/support/Helpers.class
-com/test/support/Global.class
+com/test/stepdefs/RestAssuredIT.class

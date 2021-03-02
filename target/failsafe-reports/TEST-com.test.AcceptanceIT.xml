@@ -1,0 +1,1574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report-3.0.xsd" version="3.0" name="com.test.AcceptanceIT" time="4.174" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="13"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/amit/Desktop/amit/projects/cucumber-java-restAssured/target/test-classes:/Users/amit/.m2/repository/io/cucumber/cucumber-java/6.9.1/cucumber-java-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-core/6.9.1/cucumber-core-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-gherkin/6.9.1/cucumber-gherkin-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.1/cucumber-gherkin-messages-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/messages/13.2.1/messages-13.2.1.jar:/Users/amit/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/amit/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-plugin/6.9.1/cucumber-plugin-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/docstring/6.9.1/docstring-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/amit/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/amit/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-junit/6.9.1/cucumber-junit-6.9.1.jar:/Users/amit/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/amit/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/amit/.m2/repository/io/rest-assured/rest-assured/4.3.3/rest-assured-4.3.3.jar:/Users/amit/.m2/repository/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7.jar:/Users/amit/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.7/groovy-xml-3.0.7.jar:/Users/amit/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/amit/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/amit/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/amit/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/amit/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/amit/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/amit/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/amit/.m2/repository/io/rest-assured/json-path/4.3.3/json-path-4.3.3.jar:/Users/amit/.m2/repository/org/codehaus/groovy/groovy-json/3.0.7/groovy-json-3.0.7.jar:/Users/amit/.m2/repository/io/rest-assured/rest-assured-common/4.3.3/rest-assured-common-4.3.3.jar:/Users/amit/.m2/repository/io/rest-assured/xml-path/4.3.3/xml-path-4.3.3.jar:/Users/amit/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/amit/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/amit/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/amit/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="13"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /Users/amit/Desktop/amit/projects/cucumber-java-restAssured/target/surefire 2021-03-02T18-37-29_095-jvmRun1 surefire11771747533749056910tmp surefire_013608992904675898670tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/amit/Desktop/amit/projects/cucumber-java-restAssured/target/test-classes:/Users/amit/.m2/repository/io/cucumber/cucumber-java/6.9.1/cucumber-java-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-core/6.9.1/cucumber-core-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-gherkin/6.9.1/cucumber-gherkin-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.1/cucumber-gherkin-messages-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/messages/13.2.1/messages-13.2.1.jar:/Users/amit/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/amit/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-plugin/6.9.1/cucumber-plugin-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/docstring/6.9.1/docstring-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/amit/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/amit/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-junit/6.9.1/cucumber-junit-6.9.1.jar:/Users/amit/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/amit/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/amit/.m2/repository/io/rest-assured/rest-assured/4.3.3/rest-assured-4.3.3.jar:/Users/amit/.m2/repository/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7.jar:/Users/amit/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.7/groovy-xml-3.0.7.jar:/Users/amit/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/amit/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/amit/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/amit/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/amit/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/amit/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/amit/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/amit/.m2/repository/io/rest-assured/json-path/4.3.3/json-path-4.3.3.jar:/Users/amit/.m2/repository/org/codehaus/groovy/groovy-json/3.0.7/groovy-json-3.0.7.jar:/Users/amit/.m2/repository/io/rest-assured/rest-assured-common/4.3.3/rest-assured-common-4.3.3.jar:/Users/amit/.m2/repository/io/rest-assured/xml-path/4.3.3/xml-path-4.3.3.jar:/Users/amit/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/amit/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/amit/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/amit/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/amit"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="jdk.module.path" value="/Users/amit/Desktop/amit/projects/cucumber-java-restAssured/target/com.test-1.0-SNAPSHOT.jar"/>
+    <property name="java.version.date" value="2020-01-14"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/amit/Desktop/amit/projects/cucumber-java-restAssured"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/Users/amit/.m2/repository/org/apache/maven/surefire/surefire-booter/3.0.0-M5/surefire-booter-3.0.0-M5.jar:/Users/amit/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M5/surefire-api-3.0.0-M5.jar:/Users/amit/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M5/surefire-logger-api-3.0.0-M5.jar:/Users/amit/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.0.0-M4/surefire-shared-utils-3.0.0-M4.jar:/Users/amit/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.0.0-M5/surefire-extensions-spi-3.0.0-M5.jar:/Users/amit/Desktop/amit/projects/cucumber-java-restAssured/target/test-classes:/Users/amit/.m2/repository/io/cucumber/cucumber-java/6.9.1/cucumber-java-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-core/6.9.1/cucumber-core-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-gherkin/6.9.1/cucumber-gherkin-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.1/cucumber-gherkin-messages-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/messages/13.2.1/messages-13.2.1.jar:/Users/amit/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/amit/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-plugin/6.9.1/cucumber-plugin-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/docstring/6.9.1/docstring-6.9.1.jar:/Users/amit/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/amit/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/amit/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/amit/.m2/repository/io/cucumber/cucumber-junit/6.9.1/cucumber-junit-6.9.1.jar:/Users/amit/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/amit/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/amit/.m2/repository/io/rest-assured/rest-assured/4.3.3/rest-assured-4.3.3.jar:/Users/amit/.m2/repository/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7.jar:/Users/amit/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.7/groovy-xml-3.0.7.jar:/Users/amit/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/amit/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/amit/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/amit/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/amit/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/amit/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/amit/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/amit/.m2/repository/io/rest-assured/json-path/4.3.3/json-path-4.3.3.jar:/Users/amit/.m2/repository/org/codehaus/groovy/groovy-json/3.0.7/groovy-json-3.0.7.jar:/Users/amit/.m2/repository/io/rest-assured/rest-assured-common/4.3.3/rest-assured-common-4.3.3.jar:/Users/amit/.m2/repository/io/rest-assured/xml-path/4.3.3/xml-path-4.3.3.jar:/Users/amit/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/amit/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/amit/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/amit/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/amit/.m2/repository/org/apache/maven/surefire/surefire-junit4/3.0.0-M5/surefire-junit4-3.0.0-M5.jar:/Users/amit/.m2/repository/org/apache/maven/surefire/common-java5/3.0.0-M5/common-java5-3.0.0-M5.jar:/Users/amit/.m2/repository/org/apache/maven/surefire/common-junit3/3.0.0-M5/common-junit3-3.0.0-M5.jar:/Users/amit/.m2/repository/org/apache/maven/surefire/common-junit4/3.0.0-M5/common-junit4-3.0.0-M5.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="13.0.2+8"/>
+    <property name="user.name" value="amit"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.15.7"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/amit/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/kr/vnl6k8r90wx4cbmv4m26d4480000gn/T/"/>
+    <property name="idea.version" value="2020.3.1"/>
+    <property name="java.version" value="13.0.2"/>
+    <property name="user.dir" value="/Users/amit/Desktop/amit/projects/cucumber-java-restAssured"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/Users/amit/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="13.0.2+8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="57.0"/>
+  </properties>
+  <testcase name="User calls web service to get a book by its ISBN" classname="Get book by ISBN" time="3.64">
+    <failure message="1 expectation failed.&#10;JSON path totalItems doesn&apos;t match.&#10;Expected: &lt;1457&gt;&#10;  Actual: &lt;945&gt;&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+JSON path totalItems doesn't match.
+Expected: <1457>
+  Actual: <945>
+
+]]></failure>
+    <system-out><![CDATA[
+Scenario: User calls web service to get a book by its ISBN &amp#27;[90m# src/test/resources/com/test/RestAssured.feature:2&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma book exists with an isbn of &amp#27;[0m&amp#27;[32m&amp#27;[1m"9781451648546"&amp#27;[0m      &amp#27;[90m# com.test.stepdefs.RestAssuredIT.a_book_exists_with_isbn(java.lang.String)&amp#27;[0m
+{
+    "kind": "books#volumes",
+    "totalItems": 945,
+    "items": [
+        {
+            "kind": "books#volume",
+            "id": "nvgdAwAAQBAJ",
+            "etag": "kjfjYvRSTaM",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/nvgdAwAAQBAJ",
+            "volumeInfo": {
+                "title": "Steve Jobs - 101 Amazing Facts You Didn't Know",
+                "subtitle": "Fun Facts and Trivia Tidbits Quiz Game Books",
+                "authors": [
+                    "G Whiz"
+                ],
+                "publisher": "101BookFacts.com (pub-5999650418488591)",
+                "publishedDate": "2014-03-19",
+                "description": "Did you know the book cover the only part of the biography that Steve Jobs controled? Or, did you know Steve Jobs by Walter Isaacson is the only biography that broke the international sales records to become a global bestseller? What are the amazing facts of Steve Jobs by Walter Isaacson? Do you want to know the golden nuggets of facts readers love? If you've enjoyed the book, then this will be a must read delight for you! Collected for readers everywhere are 101 book facts about the book & author that are fun, down-to-earth, and amazingly true to keep you laughing and learning as you read through the book! Tips & Tricks to Enhance Reading Experience • Enter \"G Whiz\" after your favorite title to see if publication exists! ie) Harry Potter G Whiz • Enter \"G Whiz 101\" to search for entire catalogue! • Tell us what title you want next! • Combine your favorite titles to receive bundle coupons! • Submit a review and hop on the Wall of Contributors! “Get ready for fun, down-to-earth, and amazing facts that keep you laughing & learning!\" - G Whiz DISCLAIMER: This work is an unofficial derivative work not to be confused with the original title. It is a collection of facts from reputable sources generally known to the public with source URLs for further reading and enjoyment. Due to the nature of research, no content shall be deemed authoritative nor used for citation purposes. Refined and tested for quality, we provide a 100% satisfaction guarantee or your money back.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781497732032"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1497732034"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.3.3.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=nvgdAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=nvgdAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=nvgdAwAAQBAJ&pg=PA31&dq=9781451648546&hl=&cd=1&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=nvgdAwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=nvgdAwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 4.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 3.82,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=nvgdAwAAQBAJ&rdid=book-nvgdAwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 4990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 3820000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Steve_Jobs_101_Amazing_Facts_You_Didn_t-sample-epub.acsm?id=nvgdAwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Steve_Jobs_101_Amazing_Facts_You_Didn_t-sample-pdf.acsm?id=nvgdAwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=nvgdAwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "... steve-jobs-by-walter-isaacson/ http://www.huffingtonpost.com/2011/10/24/steve<br>\n- jobs-review-walter-isaacsonbiography_n_1028495.html http://www.<br>\nbarnesandnoble.com/w/steve-jobswalter-isaacson/1104099551?ean=<br>\n<b>9781451648546</b>&nbsp;..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "8U2oAAAAQBAJ",
+            "etag": "O7OsarhY98A",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/8U2oAAAAQBAJ",
+            "volumeInfo": {
+                "title": "Steve Jobs",
+                "authors": [
+                    "Walter Isaacson"
+                ],
+                "publisher": "Simon and Schuster",
+                "publishedDate": "2011",
+                "description": "Draws on more than forty interviews with Steve Jobs, as well as interviews with family members, friends, competitors, and colleagues to offer a look at the co-founder and leading creative force behind the Apple computer company.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781451648546"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1451648545"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 630,
+                "printType": "BOOK",
+                "categories": [
+                    "Biography & Autobiography"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 3906,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.4.1.0.preview.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=8U2oAAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=8U2oAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=8U2oAAAAQBAJ&printsec=frontcover&dq=9781451648546&hl=&cd=2&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=8U2oAAAAQBAJ&dq=9781451648546&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Steve_Jobs.html?hl=&id=8U2oAAAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=8U2oAAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Draws on more than forty interviews with Steve Jobs, as well as interviews with family members, friends, competitors, and colleagues to offer a look at the co-founder and leading creative force behind the Apple computer company."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "9s1CDwAAQBAJ",
+            "etag": "xIK7mnAdeLc",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/9s1CDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Focus On: 100 Most Popular 2010s Comedy-drama Films",
+                "authors": [
+                    "Wikipedia contributors"
+                ],
+                "publisher": "e-artnow sro",
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.1.2.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=9s1CDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=9s1CDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=9s1CDwAAQBAJ&pg=PA3&dq=9781451648546&hl=&cd=3&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=9s1CDwAAQBAJ&dq=9781451648546&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Focus_On_100_Most_Popular_2010s_Comedy_d.html?hl=&id=9s1CDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Focus_On_100_Most_Popular_2010s_Comedy_d-sample-epub.acsm?id=9s1CDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=9s1CDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "New York: Simon and Schuster. pp. 435–436. ISBN <b>9781451648546</b>. ^ Connelly, <br>\nBrendon (September 25, 2013). &quot;Inside The Research, Design, And Animation Of <br>\nWalt Disney&#39;s Frozen With Producer Peter Del Vecho&quot;. Bleeding Cool."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "Ms5CDwAAQBAJ",
+            "etag": "7AcGw/p7LEc",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/Ms5CDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Focus On: 100 Most Popular 2010s Fantasy Films",
+                "authors": [
+                    "Wikipedia contributors"
+                ],
+                "publisher": "e-artnow sro",
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.1.1.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=Ms5CDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=Ms5CDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=Ms5CDwAAQBAJ&pg=PA2018-IA67&dq=9781451648546&hl=&cd=4&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=Ms5CDwAAQBAJ&dq=9781451648546&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Focus_On_100_Most_Popular_2010s_Fantasy.html?hl=&id=Ms5CDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Focus_On_100_Most_Popular_2010s_Fantasy-sample-epub.acsm?id=Ms5CDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=Ms5CDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "New York: Simon and Schuster. pp. 435–436. ISBN <b>9781451648546</b>. ^ Connelly, <br>\nBrendon (September 25, 2013). &quot;Inside The Research, Design, And Animation Of <br>\nWalt Disney&#39;s Frozen With Producer Peter Del Vecho&quot;. Bleeding Cool."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "ts1CDwAAQBAJ",
+            "etag": "k41nkfutWmU",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/ts1CDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Focus On: 100 Most Popular 2010s Adventure Films",
+                "authors": [
+                    "Wikipedia contributors"
+                ],
+                "publisher": "e-artnow sro",
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.2.2.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=ts1CDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=ts1CDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=ts1CDwAAQBAJ&pg=RA3-PA1938&dq=9781451648546&hl=&cd=5&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=ts1CDwAAQBAJ&dq=9781451648546&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Focus_On_100_Most_Popular_2010s_Adventur.html?hl=&id=ts1CDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Focus_On_100_Most_Popular_2010s_Adventur-sample-epub.acsm?id=ts1CDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=ts1CDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "New York: Simon and Schuster. pp. 435–436. ISBN <b>9781451648546</b>. ^ Connelly, <br>\nBrendon (September 25, 2013). &quot;Inside The Research, Design, And Animation Of <br>\nWalt Disney&#39;s Frozen With Producer Peter Del Vecho&quot;. Bleeding Cool."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "2s1CDwAAQBAJ",
+            "etag": "3Qz29O7cINk",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/2s1CDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Focus On: 100 Most Popular American 3D Films",
+                "authors": [
+                    "Wikipedia contributors"
+                ],
+                "publisher": "e-artnow sro",
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.1.1.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=2s1CDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=2s1CDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=2s1CDwAAQBAJ&pg=RA2-PA1930&dq=9781451648546&hl=&cd=6&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=2s1CDwAAQBAJ&dq=9781451648546&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Focus_On_100_Most_Popular_American_3D_Fi.html?hl=&id=2s1CDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Focus_On_100_Most_Popular_American_3D_Fi-sample-epub.acsm?id=2s1CDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=2s1CDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "New York: Simon and Schuster. pp. 435–436. ISBN <b>9781451648546</b>. ^ Connelly, <br>\nBrendon (September 25, 2013). &quot;Inside The Research, Design, And Animation Of <br>\nWalt Disney&#39;s Frozen With Producer Peter Del Vecho&quot;. Bleeding Cool."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "LkeAjbaZ__IC",
+            "etag": "zw+cldMkTk4",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/LkeAjbaZ__IC",
+            "volumeInfo": {
+                "title": "Steve Jobs: The Man Who Thought Different",
+                "subtitle": "A Biography",
+                "authors": [
+                    "Karen Blumenthal"
+                ],
+                "publisher": "Square Fish",
+                "publishedDate": "2012-02-14",
+                "description": "A riveting biography of the groundbreaking innovator who was a giant in the worlds of computing, music, filmmaking, design, smart phones, and more. A finalist for the YALSA Excellence in Nonfiction Award! \"Your time is limited. . . . have the courage to follow your heart and intuition.\" —Steve Jobs From the start, his path was never predictable. Steve Jobs was given up for adoption at birth, dropped out of college after one semester, and at the age of twenty, created Apple in his parents' garage with his friend Steve Wozniack. Then came the core and hallmark of his genius—his exacting moderation for perfection, his counterculture life approach, and his level of taste and style that pushed all boundaries. A devoted husband, father, and Buddhist, he battled cancer for over a decade, became the ultimate CEO, and made the world want every product he touched, from the Macintosh to the iPhone, from iTunes and the iPod to the Macbook. Critically acclaimed author Karen Blumenthal takes us to the core of this complicated and legendary man while simultaneously exploring the evolution of computers. Framed by Jobs' inspirational Stanford commencement speech and illustrated throughout with black and white photos, this is the story of the man who changed our world. Read more thrilling nonfiction by Karen Blumenthal: Hillary Rodham Clinton: A Woman Living History (A YALSA Excellence in Nonfiction Award Finalist) Bootleg: Murder, Moonshine, and the Lawless Years of Prohibition Tommy: The Gun That Changed America Praise for Steve Jobs: The Man Who Thought Different: A Biography: “This is a smart book about a smart subject by a smart writer.” —Booklist, starred review “Students who know Steve Jobs only through Apple's iTunes, iPhones, and iPads will have their eyes opened by this accessible and well-written biography.” —VOYA “An engaging and intimate portrait. Few biographies for young readers feel as relevant and current as this one does.” —The Horn Book Magazine “A perceptive, well-wrought picture of an iconic figure.” —Kirkus Reviews “Blumenthal crafts an insightful, balanced portrait.” —Publishers Weekly",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781250014610"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1250014611"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": false
+                },
+                "pageCount": 320,
+                "printType": "BOOK",
+                "categories": [
+                    "Young Adult Nonfiction"
+                ],
+                "averageRating": 3.5,
+                "ratingsCount": 10,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.5.6.0.preview.2",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=LkeAjbaZ__IC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=LkeAjbaZ__IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=LkeAjbaZ__IC&printsec=frontcover&dq=9781451648546&hl=&cd=7&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=LkeAjbaZ__IC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=LkeAjbaZ__IC"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 8.72,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 8.72,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=LkeAjbaZ__IC&rdid=book-LkeAjbaZ__IC&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 8720000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 8720000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Steve_Jobs_The_Man_Who_Thought_Different-sample-epub.acsm?id=LkeAjbaZ__IC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=LkeAjbaZ__IC&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Framed by Jobs&#39; inspirational Stanford commencement speech and illustrated throughout with black and white photos, this is the story of the man who changed our world."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "6Z7_wQEACAAJ",
+            "etag": "aIpug/70XnM",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/6Z7_wQEACAAJ",
+            "volumeInfo": {
+                "title": "Walter Isaacson: The Genius Biographies",
+                "subtitle": "Benjamin Franklin, Einstein, Steve Jobs, and Leonardo da Vinci",
+                "authors": [
+                    "Walter Isaacson"
+                ],
+                "publisher": "Simon & Schuster",
+                "publishedDate": "2019-05-28",
+                "description": "This exclusive boxed set from beloved New York Times bestselling author Walter Isaacson features his definitive biographies: Steve Jobs, Einstein, Benjamin Franklin, and Leonardo da Vinci. “If anybody in America understands genius, it’s Walter Isaacson.” —Salon Celebrated historian, journalist, and bestselling author Walter Isaacson’s biography collection of geniuses now available in one boxed set—the perfect gift for history lovers everywhere. Steve Jobs: The “enthralling” (The New Yorker) worldwide bestselling biography of legendary Apple cofounder Steve Jobs. The story of the roller-coaster life and intense creative entrepreneur whose passion for perfection and ferocious drive revolutionized six industries: personal computers, animated movies, music, phones, tablet computing, and digital publishing. Isaacson’s portrait touched millions of readers. Einstein: How did his mind work? What made him a genius? Isaacson’s biography of Albert Einstein—also the basis for the ten-part National Geographic series starring Geoffrey Rush—shows how Einstein’s scientific imagination sprang from the rebellious nature of his personality. His fascinating story is a testament to the connection between creativity and freedom. Benjamin Franklin: In this colorful and intimate narrative, Isaacson provides the full sweep of Ben Franklin’s amazing life, showing how the most fascinating Founding Father helped forge the American national identity. Leonardo da Vinci: History’s consummate innovator and most creative thinker. Isaacson illustrates how Leonardo’s genius was based on skills we can improve in ourselves, such as passionate curiosity, careful observation, and an imagination so playful that it flirted with fantasy.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1982130423"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781982130428"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 2592,
+                "printType": "BOOK",
+                "categories": [
+                    "Biography & Autobiography"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=6Z7_wQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=6Z7_wQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=6Z7_wQEACAAJ&dq=9781451648546&hl=&cd=8&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=6Z7_wQEACAAJ&dq=9781451648546&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Walter_Isaacson_The_Genius_Biographies.html?hl=&id=6Z7_wQEACAAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=6Z7_wQEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "The story of the roller-coaster life and intense creative entrepreneur whose passion for perfection and ferocious drive revolutionized six industries: personal computers, animated movies, music, phones, tablet computing, and digital ..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "U9UgyWiCcrAC",
+            "etag": "xQfW8uXXW4A",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/U9UgyWiCcrAC",
+            "volumeInfo": {
+                "title": "The Wise Men",
+                "subtitle": "Six Friends and the World They Made",
+                "authors": [
+                    "Walter Isaacson",
+                    "Evan Thomas"
+                ],
+                "publisher": "Simon and Schuster",
+                "publishedDate": "1997-06-04",
+                "description": "A captivating blend of personal biography and public drama, The Wise Men introduces the original best and brightest, leaders whose outsized personalities and actions brought order to postwar chaos: Averell Harriman, the freewheeling diplomat and Roosevelt's special envoy to Churchill and Stalin; Dean Acheson, the secretary of state who was more responsible for the Truman Doctrine than Truman and for the Marshall Plan than General Marshall; George Kennan, self-cast outsider and intellectual darling of the Washington elite; Robert Lovett, assistant secretary of war, undersecretary of state, and secretary of defense throughout the formative years of the Cold War; John McCloy, one of the nation's most influential private citizens; and Charles Bohlen, adroit diplomat and ambassador to the Soviet Union.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780684837710"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0684837714"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 864,
+                "printType": "BOOK",
+                "categories": [
+                    "Biography & Autobiography"
+                ],
+                "averageRating": 4.5,
+                "ratingsCount": 4,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.2.0.0.preview.0",
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=U9UgyWiCcrAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=U9UgyWiCcrAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=U9UgyWiCcrAC&printsec=frontcover&dq=9781451648546&hl=&cd=9&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=U9UgyWiCcrAC&dq=9781451648546&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/The_Wise_Men.html?hl=&id=U9UgyWiCcrAC"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=U9UgyWiCcrAC&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "A captivating blend of personal biography and public drama, The Wise Men introduces the original best and brightest, leaders whose outsized personalities and actions brought order to postwar chaos: Averell Harriman, the freewheeling ..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "98L4FS-1i1YC",
+            "etag": "/ekbYNE/xXE",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/98L4FS-1i1YC",
+            "volumeInfo": {
+                "title": "Prosopography Approaches and Applications",
+                "subtitle": "A Handbook",
+                "authors": [
+                    "K. S. B. Keats-Rohan"
+                ],
+                "publisher": "Occasional Publications UPR",
+                "publishedDate": "2007",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781900934121"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1900934124"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 635,
+                "printType": "BOOK",
+                "categories": [
+                    "Prosopography"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=98L4FS-1i1YC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=98L4FS-1i1YC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=98L4FS-1i1YC&printsec=frontcover&dq=9781451648546&hl=&cd=10&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=98L4FS-1i1YC&dq=9781451648546&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Prosopography_Approaches_and_Application.html?hl=&id=98L4FS-1i1YC"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=98L4FS-1i1YC&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "This collection of 29 essays, ranging from ancient to modern history and including Arabic-Islamic prosopography, covers all aspects of prosopography as currently practised."
+            }
+        }
+    ]
+}
+response: {
+    "kind": "books#volumes",
+    "totalItems": 945,
+    "items": [
+        {
+            "kind": "books#volume",
+            "id": "nvgdAwAAQBAJ",
+            "etag": "kjfjYvRSTaM",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/nvgdAwAAQBAJ",
+            "volumeInfo": {
+                "title": "Steve Jobs - 101 Amazing Facts You Didn't Know",
+                "subtitle": "Fun Facts and Trivia Tidbits Quiz Game Books",
+                "authors": [
+                    "G Whiz"
+                ],
+                "publisher": "101BookFacts.com (pub-5999650418488591)",
+                "publishedDate": "2014-03-19",
+                "description": "Did you know the book cover the only part of the biography that Steve Jobs controled? Or, did you know Steve Jobs by Walter Isaacson is the only biography that broke the international sales records to become a global bestseller? What are the amazing facts of Steve Jobs by Walter Isaacson? Do you want to know the golden nuggets of facts readers love? If you've enjoyed the book, then this will be a must read delight for you! Collected for readers everywhere are 101 book facts about the book & author that are fun, down-to-earth, and amazingly true to keep you laughing and learning as you read through the book! Tips & Tricks to Enhance Reading Experience • Enter \"G Whiz\" after your favorite title to see if publication exists! ie) Harry Potter G Whiz • Enter \"G Whiz 101\" to search for entire catalogue! • Tell us what title you want next! • Combine your favorite titles to receive bundle coupons! • Submit a review and hop on the Wall of Contributors! “Get ready for fun, down-to-earth, and amazing facts that keep you laughing & learning!\" - G Whiz DISCLAIMER: This work is an unofficial derivative work not to be confused with the original title. It is a collection of facts from reputable sources generally known to the public with source URLs for further reading and enjoyment. Due to the nature of research, no content shall be deemed authoritative nor used for citation purposes. Refined and tested for quality, we provide a 100% satisfaction guarantee or your money back.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781497732032"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1497732034"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.3.3.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=nvgdAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=nvgdAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=nvgdAwAAQBAJ&pg=PA31&dq=9781451648546&hl=&cd=1&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=nvgdAwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=nvgdAwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 4.99,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 3.82,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=nvgdAwAAQBAJ&rdid=book-nvgdAwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 4990000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 3820000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Steve_Jobs_101_Amazing_Facts_You_Didn_t-sample-epub.acsm?id=nvgdAwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Steve_Jobs_101_Amazing_Facts_You_Didn_t-sample-pdf.acsm?id=nvgdAwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=nvgdAwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "... steve-jobs-by-walter-isaacson/ http://www.huffingtonpost.com/2011/10/24/steve<br>\n- jobs-review-walter-isaacsonbiography_n_1028495.html http://www.<br>\nbarnesandnoble.com/w/steve-jobswalter-isaacson/1104099551?ean=<br>\n<b>9781451648546</b>&nbsp;..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "8U2oAAAAQBAJ",
+            "etag": "O7OsarhY98A",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/8U2oAAAAQBAJ",
+            "volumeInfo": {
+                "title": "Steve Jobs",
+                "authors": [
+                    "Walter Isaacson"
+                ],
+                "publisher": "Simon and Schuster",
+                "publishedDate": "2011",
+                "description": "Draws on more than forty interviews with Steve Jobs, as well as interviews with family members, friends, competitors, and colleagues to offer a look at the co-founder and leading creative force behind the Apple computer company.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781451648546"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1451648545"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 630,
+                "printType": "BOOK",
+                "categories": [
+                    "Biography & Autobiography"
+                ],
+                "averageRating": 4,
+                "ratingsCount": 3906,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.4.1.0.preview.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=8U2oAAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=8U2oAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=8U2oAAAAQBAJ&printsec=frontcover&dq=9781451648546&hl=&cd=2&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=8U2oAAAAQBAJ&dq=9781451648546&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Steve_Jobs.html?hl=&id=8U2oAAAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=8U2oAAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Draws on more than forty interviews with Steve Jobs, as well as interviews with family members, friends, competitors, and colleagues to offer a look at the co-founder and leading creative force behind the Apple computer company."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "9s1CDwAAQBAJ",
+            "etag": "xIK7mnAdeLc",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/9s1CDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Focus On: 100 Most Popular 2010s Comedy-drama Films",
+                "authors": [
+                    "Wikipedia contributors"
+                ],
+                "publisher": "e-artnow sro",
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.1.2.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=9s1CDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=9s1CDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=9s1CDwAAQBAJ&pg=PA3&dq=9781451648546&hl=&cd=3&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=9s1CDwAAQBAJ&dq=9781451648546&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Focus_On_100_Most_Popular_2010s_Comedy_d.html?hl=&id=9s1CDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Focus_On_100_Most_Popular_2010s_Comedy_d-sample-epub.acsm?id=9s1CDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=9s1CDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "New York: Simon and Schuster. pp. 435–436. ISBN <b>9781451648546</b>. ^ Connelly, <br>\nBrendon (September 25, 2013). &quot;Inside The Research, Design, And Animation Of <br>\nWalt Disney&#39;s Frozen With Producer Peter Del Vecho&quot;. Bleeding Cool."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "Ms5CDwAAQBAJ",
+            "etag": "7AcGw/p7LEc",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/Ms5CDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Focus On: 100 Most Popular 2010s Fantasy Films",
+                "authors": [
+                    "Wikipedia contributors"
+                ],
+                "publisher": "e-artnow sro",
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.1.1.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=Ms5CDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=Ms5CDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=Ms5CDwAAQBAJ&pg=PA2018-IA67&dq=9781451648546&hl=&cd=4&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=Ms5CDwAAQBAJ&dq=9781451648546&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Focus_On_100_Most_Popular_2010s_Fantasy.html?hl=&id=Ms5CDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Focus_On_100_Most_Popular_2010s_Fantasy-sample-epub.acsm?id=Ms5CDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=Ms5CDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "New York: Simon and Schuster. pp. 435–436. ISBN <b>9781451648546</b>. ^ Connelly, <br>\nBrendon (September 25, 2013). &quot;Inside The Research, Design, And Animation Of <br>\nWalt Disney&#39;s Frozen With Producer Peter Del Vecho&quot;. Bleeding Cool."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "ts1CDwAAQBAJ",
+            "etag": "k41nkfutWmU",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/ts1CDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Focus On: 100 Most Popular 2010s Adventure Films",
+                "authors": [
+                    "Wikipedia contributors"
+                ],
+                "publisher": "e-artnow sro",
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.2.2.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=ts1CDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=ts1CDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=ts1CDwAAQBAJ&pg=RA3-PA1938&dq=9781451648546&hl=&cd=5&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=ts1CDwAAQBAJ&dq=9781451648546&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Focus_On_100_Most_Popular_2010s_Adventur.html?hl=&id=ts1CDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Focus_On_100_Most_Popular_2010s_Adventur-sample-epub.acsm?id=ts1CDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=ts1CDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "New York: Simon and Schuster. pp. 435–436. ISBN <b>9781451648546</b>. ^ Connelly, <br>\nBrendon (September 25, 2013). &quot;Inside The Research, Design, And Animation Of <br>\nWalt Disney&#39;s Frozen With Producer Peter Del Vecho&quot;. Bleeding Cool."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "2s1CDwAAQBAJ",
+            "etag": "3Qz29O7cINk",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/2s1CDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Focus On: 100 Most Popular American 3D Films",
+                "authors": [
+                    "Wikipedia contributors"
+                ],
+                "publisher": "e-artnow sro",
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "printType": "BOOK",
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.1.1.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=2s1CDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=2s1CDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=2s1CDwAAQBAJ&pg=RA2-PA1930&dq=9781451648546&hl=&cd=6&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=2s1CDwAAQBAJ&dq=9781451648546&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Focus_On_100_Most_Popular_American_3D_Fi.html?hl=&id=2s1CDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Focus_On_100_Most_Popular_American_3D_Fi-sample-epub.acsm?id=2s1CDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=2s1CDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "New York: Simon and Schuster. pp. 435–436. ISBN <b>9781451648546</b>. ^ Connelly, <br>\nBrendon (September 25, 2013). &quot;Inside The Research, Design, And Animation Of <br>\nWalt Disney&#39;s Frozen With Producer Peter Del Vecho&quot;. Bleeding Cool."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "LkeAjbaZ__IC",
+            "etag": "zw+cldMkTk4",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/LkeAjbaZ__IC",
+            "volumeInfo": {
+                "title": "Steve Jobs: The Man Who Thought Different",
+                "subtitle": "A Biography",
+                "authors": [
+                    "Karen Blumenthal"
+                ],
+                "publisher": "Square Fish",
+                "publishedDate": "2012-02-14",
+                "description": "A riveting biography of the groundbreaking innovator who was a giant in the worlds of computing, music, filmmaking, design, smart phones, and more. A finalist for the YALSA Excellence in Nonfiction Award! \"Your time is limited. . . . have the courage to follow your heart and intuition.\" —Steve Jobs From the start, his path was never predictable. Steve Jobs was given up for adoption at birth, dropped out of college after one semester, and at the age of twenty, created Apple in his parents' garage with his friend Steve Wozniack. Then came the core and hallmark of his genius—his exacting moderation for perfection, his counterculture life approach, and his level of taste and style that pushed all boundaries. A devoted husband, father, and Buddhist, he battled cancer for over a decade, became the ultimate CEO, and made the world want every product he touched, from the Macintosh to the iPhone, from iTunes and the iPod to the Macbook. Critically acclaimed author Karen Blumenthal takes us to the core of this complicated and legendary man while simultaneously exploring the evolution of computers. Framed by Jobs' inspirational Stanford commencement speech and illustrated throughout with black and white photos, this is the story of the man who changed our world. Read more thrilling nonfiction by Karen Blumenthal: Hillary Rodham Clinton: A Woman Living History (A YALSA Excellence in Nonfiction Award Finalist) Bootleg: Murder, Moonshine, and the Lawless Years of Prohibition Tommy: The Gun That Changed America Praise for Steve Jobs: The Man Who Thought Different: A Biography: “This is a smart book about a smart subject by a smart writer.” —Booklist, starred review “Students who know Steve Jobs only through Apple's iTunes, iPhones, and iPads will have their eyes opened by this accessible and well-written biography.” —VOYA “An engaging and intimate portrait. Few biographies for young readers feel as relevant and current as this one does.” —The Horn Book Magazine “A perceptive, well-wrought picture of an iconic figure.” —Kirkus Reviews “Blumenthal crafts an insightful, balanced portrait.” —Publishers Weekly",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781250014610"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1250014611"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": false
+                },
+                "pageCount": 320,
+                "printType": "BOOK",
+                "categories": [
+                    "Young Adult Nonfiction"
+                ],
+                "averageRating": 3.5,
+                "ratingsCount": 10,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.5.6.0.preview.2",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=LkeAjbaZ__IC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=LkeAjbaZ__IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=LkeAjbaZ__IC&printsec=frontcover&dq=9781451648546&hl=&cd=7&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=LkeAjbaZ__IC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=LkeAjbaZ__IC"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 8.72,
+                    "currencyCode": "USD"
+                },
+                "retailPrice": {
+                    "amount": 8.72,
+                    "currencyCode": "USD"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=LkeAjbaZ__IC&rdid=book-LkeAjbaZ__IC&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 8720000,
+                            "currencyCode": "USD"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 8720000,
+                            "currencyCode": "USD"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.com/books/download/Steve_Jobs_The_Man_Who_Thought_Different-sample-epub.acsm?id=LkeAjbaZ__IC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=LkeAjbaZ__IC&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Framed by Jobs&#39; inspirational Stanford commencement speech and illustrated throughout with black and white photos, this is the story of the man who changed our world."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "6Z7_wQEACAAJ",
+            "etag": "aIpug/70XnM",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/6Z7_wQEACAAJ",
+            "volumeInfo": {
+                "title": "Walter Isaacson: The Genius Biographies",
+                "subtitle": "Benjamin Franklin, Einstein, Steve Jobs, and Leonardo da Vinci",
+                "authors": [
+                    "Walter Isaacson"
+                ],
+                "publisher": "Simon & Schuster",
+                "publishedDate": "2019-05-28",
+                "description": "This exclusive boxed set from beloved New York Times bestselling author Walter Isaacson features his definitive biographies: Steve Jobs, Einstein, Benjamin Franklin, and Leonardo da Vinci. “If anybody in America understands genius, it’s Walter Isaacson.” —Salon Celebrated historian, journalist, and bestselling author Walter Isaacson’s biography collection of geniuses now available in one boxed set—the perfect gift for history lovers everywhere. Steve Jobs: The “enthralling” (The New Yorker) worldwide bestselling biography of legendary Apple cofounder Steve Jobs. The story of the roller-coaster life and intense creative entrepreneur whose passion for perfection and ferocious drive revolutionized six industries: personal computers, animated movies, music, phones, tablet computing, and digital publishing. Isaacson’s portrait touched millions of readers. Einstein: How did his mind work? What made him a genius? Isaacson’s biography of Albert Einstein—also the basis for the ten-part National Geographic series starring Geoffrey Rush—shows how Einstein’s scientific imagination sprang from the rebellious nature of his personality. His fascinating story is a testament to the connection between creativity and freedom. Benjamin Franklin: In this colorful and intimate narrative, Isaacson provides the full sweep of Ben Franklin’s amazing life, showing how the most fascinating Founding Father helped forge the American national identity. Leonardo da Vinci: History’s consummate innovator and most creative thinker. Isaacson illustrates how Leonardo’s genius was based on skills we can improve in ourselves, such as passionate curiosity, careful observation, and an imagination so playful that it flirted with fantasy.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1982130423"
+                    },
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781982130428"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 2592,
+                "printType": "BOOK",
+                "categories": [
+                    "Biography & Autobiography"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=6Z7_wQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=6Z7_wQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=6Z7_wQEACAAJ&dq=9781451648546&hl=&cd=8&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=6Z7_wQEACAAJ&dq=9781451648546&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Walter_Isaacson_The_Genius_Biographies.html?hl=&id=6Z7_wQEACAAJ"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "NO_PAGES",
+                "embeddable": false,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=6Z7_wQEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "NONE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "The story of the roller-coaster life and intense creative entrepreneur whose passion for perfection and ferocious drive revolutionized six industries: personal computers, animated movies, music, phones, tablet computing, and digital ..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "U9UgyWiCcrAC",
+            "etag": "xQfW8uXXW4A",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/U9UgyWiCcrAC",
+            "volumeInfo": {
+                "title": "The Wise Men",
+                "subtitle": "Six Friends and the World They Made",
+                "authors": [
+                    "Walter Isaacson",
+                    "Evan Thomas"
+                ],
+                "publisher": "Simon and Schuster",
+                "publishedDate": "1997-06-04",
+                "description": "A captivating blend of personal biography and public drama, The Wise Men introduces the original best and brightest, leaders whose outsized personalities and actions brought order to postwar chaos: Averell Harriman, the freewheeling diplomat and Roosevelt's special envoy to Churchill and Stalin; Dean Acheson, the secretary of state who was more responsible for the Truman Doctrine than Truman and for the Marshall Plan than General Marshall; George Kennan, self-cast outsider and intellectual darling of the Washington elite; Robert Lovett, assistant secretary of war, undersecretary of state, and secretary of defense throughout the formative years of the Cold War; John McCloy, one of the nation's most influential private citizens; and Charles Bohlen, adroit diplomat and ambassador to the Soviet Union.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9780684837710"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "0684837714"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": false
+                },
+                "pageCount": 864,
+                "printType": "BOOK",
+                "categories": [
+                    "Biography & Autobiography"
+                ],
+                "averageRating": 4.5,
+                "ratingsCount": 4,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.2.0.0.preview.0",
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=U9UgyWiCcrAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=U9UgyWiCcrAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=U9UgyWiCcrAC&printsec=frontcover&dq=9781451648546&hl=&cd=9&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=U9UgyWiCcrAC&dq=9781451648546&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/The_Wise_Men.html?hl=&id=U9UgyWiCcrAC"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=U9UgyWiCcrAC&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "A captivating blend of personal biography and public drama, The Wise Men introduces the original best and brightest, leaders whose outsized personalities and actions brought order to postwar chaos: Averell Harriman, the freewheeling ..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "98L4FS-1i1YC",
+            "etag": "/ekbYNE/xXE",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/98L4FS-1i1YC",
+            "volumeInfo": {
+                "title": "Prosopography Approaches and Applications",
+                "subtitle": "A Handbook",
+                "authors": [
+                    "K. S. B. Keats-Rohan"
+                ],
+                "publisher": "Occasional Publications UPR",
+                "publishedDate": "2007",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9781900934121"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "1900934124"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 635,
+                "printType": "BOOK",
+                "categories": [
+                    "Prosopography"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "preview-1.0.0",
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=98L4FS-1i1YC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=98L4FS-1i1YC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "en",
+                "previewLink": "http://books.google.com/books?id=98L4FS-1i1YC&printsec=frontcover&dq=9781451648546&hl=&cd=10&source=gbs_api",
+                "infoLink": "http://books.google.com/books?id=98L4FS-1i1YC&dq=9781451648546&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/Prosopography_Approaches_and_Application.html?hl=&id=98L4FS-1i1YC"
+            },
+            "saleInfo": {
+                "country": "US",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "US",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=98L4FS-1i1YC&hl=&printsec=frontcover&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "This collection of 29 essays, ranging from ancient to modern history and including Arabic-Islamic prosopography, covers all aspects of prosopography as currently practised."
+            }
+        }
+    ]
+}
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32ma user retrieves the book by isbn&amp#27;[0m                   &amp#27;[90m# com.test.stepdefs.RestAssuredIT.a_user_retrieves_the_book_by_isbn()&amp#27;[0m
+status code:  200
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe status code is &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                              &amp#27;[90m# com.test.stepdefs.RestAssuredIT.verify_status_code(int)&amp#27;[0m
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mresponse includes the following&amp#27;[0m                      &amp#27;[90m# com.test.stepdefs.RestAssuredIT.response_equals(java.util.Map<java.lang.String, java.lang.String>)&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError: 1 expectation failed.
+JSON path totalItems doesn't match.
+Expected: <1457>
+  Actual: <945>
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at com.test@1.0-SNAPSHOT/com.test.stepdefs.RestAssuredIT.response_equals(RestAssuredIT.java:66)
+	at ✽.response includes the following(file:///Users/amit/Desktop/amit/projects/cucumber-java-restAssured/src/test/resources/com/test/RestAssured.feature:6)
+&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mresponse includes the following in any order&amp#27;[0m         &amp#27;[90m# com.test.stepdefs.RestAssuredIT.response_contains_in_any_order(java.util.Map<java.lang.String, java.lang.String>)&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,15 +1,16 @@
 package com.test;
 
-import io.cucumber.junit.platform.engine.Cucumber;
-//import io.cucumber.junit.CucumberOptions;
-//import org.junit.runner.RunWith;
-
-  /*(
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+@RunWith(Cucumber.class)
+@CucumberOptions
+  (
        plugin = {
                 "pretty",
                 "json:target/AcceptanceTestResults.json"
         },
-        features = "src/test/resources/com/test/InitialTest.feature",
+        features = "src/test/resources/com/test/RestAssured.feature",
         
        //When not explicitly stated in the @CucumberOptions annotation, the glue path is implicitly specified
         // as the package of the class with the @CucumberOptions annotation.
@@ -17,11 +18,8 @@ import io.cucumber.junit.platform.engine.Cucumber;
         //because stepdefs and feature are in different package , we need to specify glue
          glue = {"com.test.stepdefs"}
       //  stepNotifications = true
-      
-        
+          
 )
-*/
-   
-@Cucumber
 public class AcceptanceIT {
 }
+
