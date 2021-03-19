@@ -1,2 +1,4 @@
+com/test/stepdefs/secondIT.class
 com/test/AcceptanceIT.class
+com/test/AcceptanceTestRerunIT.class
 com/test/stepdefs/RestAssuredIT.class

@@ -3,129 +3,309 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-02T23:37:31.077Z",
-        "line": 2,
-        "name": "User calls web service to get a book by its ISBN",
+        "start_timestamp": "2021-03-18T18:34:09.028Z",
+        "line": 3,
+        "name": "get employee",
         "description": "",
-        "id": "get-book-by-isbn;user-calls-web-service-to-get-a-book-by-its-isbn",
+        "id": "second-feature-test;get-employee",
+        "after": [
+          {
+            "result": {
+              "duration": 612000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.stepdefs.RestAssuredIT.afterEverything()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 859726000,
+              "duration": 833430000,
               "status": "passed"
             },
-            "line": 3,
-            "name": "a book exists with an isbn of \"9781451648546\"",
+            "line": 5,
+            "name": "an employee exist in the database with id \"2\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"9781451648546\"",
-                  "offset": 30
+                  "val": "\"2\"",
+                  "offset": 42
                 }
               ],
-              "location": "com.test.stepdefs.RestAssuredIT.a_book_exists_with_isbn(java.lang.String)"
+              "location": "com.test.stepdefs.secondIT.an_employee_exists_with_id(java.lang.String)"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 663000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+                }
+              }
+            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1396328000,
+              "duration": 1631447000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "a user retrieves the book by isbn",
+            "line": 6,
+            "name": "user retrieves employee info by id",
             "match": {
-              "location": "com.test.stepdefs.RestAssuredIT.a_user_retrieves_the_book_by_isbn()"
+              "location": "com.test.stepdefs.secondIT.user_retrieves_employee_info_by_id()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 422000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+                }
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 70881000,
+              "duration": 41039000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "the status code is 200",
+            "line": 7,
+            "name": "the status code for get employee is 200",
             "match": {
               "arguments": [
                 {
                   "val": "200",
-                  "offset": 19
+                  "offset": 36
                 }
               ],
-              "location": "com.test.stepdefs.RestAssuredIT.verify_status_code(int)"
+              "location": "com.test.stepdefs.secondIT.verify_status(int)"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 192000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+                }
+              }
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: 1 expectation failed.\nJSON path totalItems doesn\u0027t match.\nExpected: \u003c1457\u003e\n  Actual: \u003c945\u003e\n\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\n\tat io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)\n\tat io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)\n\tat io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\n\tat io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)\n\tat io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)\n\tat com.test@1.0-SNAPSHOT/com.test.stepdefs.RestAssuredIT.response_equals(RestAssuredIT.java:66)\n\tat ✽.response includes the following(file:///Users/amit/Desktop/amit/projects/cucumber-java-restAssured/src/test/resources/com/test/RestAssured.feature:6)\n",
-              "duration": 968195000,
-              "status": "failed"
+              "duration": 554830000,
+              "status": "passed"
             },
-            "line": 6,
-            "name": "response includes the following",
+            "line": 8,
+            "name": "response includes the following employee info",
             "match": {
-              "location": "com.test.stepdefs.RestAssuredIT.response_equals(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+              "location": "com.test.stepdefs.secondIT.employee_response_equals(java.util.Map\u003cjava.lang.String, java.lang.Object\u003e)"
             },
-            "rows": [
+            "after": [
               {
-                "cells": [
-                  "totalItems",
-                  "1457"
-                ]
-              },
-              {
-                "cells": [
-                  "kind",
-                  "books#volumes"
-                ]
+                "result": {
+                  "duration": 969000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+                }
               }
             ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 104000,
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "response includes the following in any order",
-            "match": {
-              "location": "com.test.stepdefs.RestAssuredIT.response_contains_in_any_order(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
-            },
             "rows": [
               {
                 "cells": [
-                  "items[0].volumeInfo.subtitle",
-                  "Fun Facts and Trivia Tidbits Quiz Game Books"
+                  "status",
+                  "success"
                 ]
               },
               {
                 "cells": [
-                  "items.volumeInfo.publisher",
-                  "Simon and Schuster"
+                  "data.employee_name",
+                  "Garrett Winters"
                 ]
               },
               {
                 "cells": [
-                  "items.volumeInfo.pageCount",
-                  "630"
+                  "data.id",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "data.employee_age",
+                  "63"
                 ]
               }
             ],
             "keyword": "And "
           }
+        ],
+        "tags": [
+          {
+            "name": "@get"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-18T18:34:12.205Z",
+        "line": 15,
+        "name": "post employee",
+        "description": "",
+        "id": "second-feature-test;post-employee",
+        "after": [
+          {
+            "result": {
+              "duration": 401000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.stepdefs.RestAssuredIT.afterEverything()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Different value found in node \"$.data.salary\", expected: \u003cstring\u003e but was: \u003cmissing\u003e.\n\tat net.javacrumbs.jsonunit.core.internal.matchers.InternalMatcher.failWithMessage(InternalMatcher.java:237)\n\tat net.javacrumbs.jsonunit.core.internal.matchers.InternalMatcher.failOnDifference(InternalMatcher.java:187)\n\tat net.javacrumbs.jsonunit.core.internal.matchers.InternalMatcher.failOnDifference(InternalMatcher.java:174)\n\tat net.javacrumbs.jsonunit.core.internal.matchers.InternalMatcher.isPresent(InternalMatcher.java:274)\n\tat net.javacrumbs.jsonunit.core.internal.matchers.InternalMatcher.assertType(InternalMatcher.java:289)\n\tat net.javacrumbs.jsonunit.assertj.JsonAssert.assertType(JsonAssert.java:267)\n\tat net.javacrumbs.jsonunit.assertj.JsonAssert.isString(JsonAssert.java:209)\n\tat com.test@1.0-SNAPSHOT/com.test.stepdefs.secondIT.create_employee_record(secondIT.java:134)\n\tat ✽.an employee record is created with values(file:///Users/amit/Desktop/amit/projects/cucumber-java-restAssured/src/test/resources/com/test/SecondTest.feature:16)\n",
+              "duration": 1171045000,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "an employee record is created with values",
+            "match": {
+              "location": "com.test.stepdefs.secondIT.create_employee_record(java.util.Map\u003cjava.lang.String, java.lang.Object\u003e)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 579000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "employee_name",
+                  "Test Name1"
+                ]
+              },
+              {
+                "cells": [
+                  "age",
+                  "41"
+                ]
+              },
+              {
+                "cells": [
+                  "salary",
+                  "320000"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@post"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-18T18:34:13.399Z",
+        "line": 22,
+        "name": "post another employee",
+        "description": "",
+        "id": "second-feature-test;post-another-employee",
+        "after": [
+          {
+            "result": {
+              "duration": 173000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.test.stepdefs.RestAssuredIT.afterEverything()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 732884000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "an employee record is created with other values",
+            "match": {
+              "location": "com.test.stepdefs.secondIT.create_another_employee_record(java.util.Map\u003cjava.lang.String, java.lang.Object\u003e)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 262000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "employee_name",
+                  "Test Name2"
+                ]
+              },
+              {
+                "cells": [
+                  "age",
+                  "50"
+                ]
+              },
+              {
+                "cells": [
+                  "salary",
+                  "500000"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@post"
+          }
         ]
       }
     ],
-    "name": "Get book by ISBN",
+    "name": "second feature test",
     "description": "",
-    "id": "get-book-by-isbn",
+    "id": "second-feature-test",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/com/test/RestAssured.feature",
+    "uri": "file:src/test/resources/com/test/SecondTest.feature",
     "tags": []
   }
 ]

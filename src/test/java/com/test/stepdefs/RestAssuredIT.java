@@ -1,7 +1,5 @@
 package com.test.stepdefs;
 
-
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.hamcrest.Matchers.equalTo;
@@ -9,6 +7,7 @@ import static org.hamcrest.Matchers.equalTo;
 import java.util.Map;
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
@@ -32,10 +31,7 @@ public class RestAssuredIT {
 	public static RequestSpecification request;
 	public  static String ISBN;
 	//private String ENDPOINT_GET_BOOK_BY_ISBN = "https://www.googleapis.com/books/v1/volumes";
-
 	
-   
-   
 	@Given("a book exists with an isbn of {string}")
 	public void a_book_exists_with_isbn(String isbn){
 		RestAssuredIT.ISBN = isbn;
@@ -83,5 +79,14 @@ public class RestAssuredIT {
 			}
 		}
 	}
-    
+	
+	@AfterStep
+    public void afterEveryStep(){
+		System.out.println("***after every step****");
+	}
+	
+	@After
+    public void afterEverything(){
+		System.out.println("***after everything****");
+	}
 }
