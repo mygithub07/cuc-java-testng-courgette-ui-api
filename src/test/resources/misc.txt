@@ -1,0 +1,5 @@
+grid hub/node commands:
+
+java -Dselenium.LOGGER.level=WARNING -jar selenium-server.jar -role hub -port 4444
+java -Dwebdriver.chrome.driver="/Users/amit/Desktop/amit/projects/misc/chromedriver" -jar selenium-server.jar -role node -browser browserName=chrome,maxInstances=4,platform=ANY -hub https://192.168.1.7:65299/grid/register 
+java -Dwebdriver.gecko.driver="/Users/amit/Desktop/amit/projects/misc/geckodriver" -jar selenium-server.jar -role node -browser browserName=firefox,maxInstances=4,platform=ANY -hub https://192.168.1.7:65299/grid/register

@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import com.google.inject.Inject;
+import com.test.support.Global;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
@@ -43,7 +45,9 @@ public class secondIT {
 	 public static JsonPath jsonPathEvaluator;
 	//Unreliable ur = new Unreliable();
 	
-  
+   @Inject
+   Global global;
+   
 	@Given("an employee exist in the database with id {string}")
 	public void an_employee_exists_with_id(String ID){
 		secondIT.id=ID;
@@ -172,5 +176,21 @@ JsonObject jsonObj = element.getAsJsonObject();
 	 	
 	 	throw new IOException("Exception in I/O operation");
 	    }
+	    @Given("I log the type of {long}")
+        public void logType(Long testLong ) {
+            System.out.println("type of " +testLong +" is:"+ testLong.getClass());
+       }
+   
+        @Given("I log {string}")
+        public void logSomething(String teststr )   {
+            System.out.println("sample text:"+ teststr+"somethingtoIdentifySpace");
+       }
+       
+         @And("perform guice test" )
+                 public void guiceTest(){
+               System.out.println(global.help.guiceTest());
+                 }
+
+
 	 
 }

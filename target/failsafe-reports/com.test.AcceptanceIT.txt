@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.test.AcceptanceIT
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.209 s <<< FAILURE! - in com.test.AcceptanceIT
-second feature test.post employee  Time elapsed: 1.224 s  <<< FAILURE!
-java.lang.AssertionError: Different value found in node "$.data.salary", expected: <string> but was: <missing>.
-

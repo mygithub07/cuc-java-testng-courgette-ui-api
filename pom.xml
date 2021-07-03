@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  
+
     <groupId>com.test</groupId>
     <artifactId>com.test</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+           
+        </plugins>
+       
+    </build>
     <modelVersion>4.0.0</modelVersion>
   
   <properties>
@@ -13,11 +27,12 @@
     <assertj.version>3.16.1</assertj.version>
     <httpclient.version>4.5.12</httpclient.version>
     <docker-maven-plugin.version>0.33.0</docker-maven-plugin.version>
-
+     <selenium-java.version>3.141.59</selenium-java.version>
       <aspectj.version>1.9.1</aspectj.version>
     <!-- Test selection properties -->
     <tests.to.run>**/**Test.java</tests.to.run>
-     
+   <!-- <hub.port>${hub.p}</hub.port>-->
+      
   </properties>
     <repositories>
   <repository>
@@ -44,14 +59,31 @@
       <version>2.0.0-alpha1</version>
       <scope>provided</scope>
     </dependency>
-
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-guice</artifactId>
+      <version>${cucumber.version}</version>
+      <scope>test</scope>
+    </dependency>
+      <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>${selenium-java.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.inject</groupId>
+      <artifactId>guice</artifactId>
+      <version>4.2.3</version>
+      <scope>test</scope>
+    </dependency>
      <dependency>
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-java</artifactId>
       <version>${cucumber.version}</version>
       <scope>test</scope>
     </dependency>
-      
+     
       <dependency>
         <groupId>io.cucumber</groupId>
         <artifactId>cucumber-junit</artifactId>
@@ -65,7 +97,7 @@
     <version>${junit.version}</version>
     <scope>test</scope>
 </dependency>
-      
+    
       <dependency>
         <groupId>io.rest-assured</groupId>
         <artifactId>rest-assured</artifactId>
@@ -95,6 +127,28 @@
     <artifactId>json</artifactId>
     <version>20201115</version>
 </dependency>
+      <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.14.3</version>
+    <scope>test</scope>
+</dependency>
+      <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>6.9.1</version>
+</dependency>
+      <dependency>
+    <groupId>io.github.prashant-ramcharan</groupId>
+    <artifactId>courgette-jvm</artifactId>
+    <version>5.11.0</version>
+</dependency>
+      <dependency>
+  <!-- httpclient dpendendecy is to resolve courgette-jvm error -  NoClassDefFoundError: org/apache/http/conn/ssl/TrustAllStrategy -->        
+ <groupId>org.apache.httpcomponents</groupId>
+    <artifactId>httpclient</artifactId>
+    <version>4.5.10</version>
+</dependency>
  <!--     
  <dependency>
     <groupId>io.github.artsok</groupId>
@@ -106,49 +160,294 @@
   </dependencies>
     
   <profiles>
+      
  <profile>
       <id>acceptanceTests</id>
       <activation>
-        <activeByDefault>false</activeByDefault>
+        <activeByDefault>true</activeByDefault>
       </activation>
+   <!--   <properties>
+          <hub.port>${hub.p}</hub.port>
+        </properties>
+  -->
       <build>
-       
+          <!--
+          <resources>
+                         <resource>
+                                <directory>src/test/resources</directory>
+                                <filtering>true</filtering>
+                              <includes>
+                                    <include>pom.properties</include>
+                                </includes>
+                            </resource>
+                </resources>  
+                -->  
         <plugins>
-     
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
-                <configuration>
-                  <!-- We run all tests in the integration-tests phase -->
-                  <excludes>
-                    <exclude>**</exclude>
-                  </excludes>
-                </configuration>
+            <!--
+                  <plugin>
+                     <groupId>org.apache.maven.plugins</groupId>
+                     <artifactId>maven-resources-plugin</artifactId>
+                     <version>3.2.0</version>
+                     <configuration>
+                       
+                         <propertiesEncoding>ISO-8859-1</propertiesEncoding>
+                     </configuration>
+                </plugin>  
+                -->
+            
+             <plugin>
+                    <groupId>org.codehaus.mojo</groupId> 
+                    <artifactId>properties-maven-plugin</artifactId> 
+                    <version>1.0.0</version> 
+                    <executions> 
+                        <execution> 
+                            <phase>generate-resources</phase> 
+                            <goals> 
+                                <goal>write-project-properties</goal> 
+                            </goals> 
+                            <configuration> 
+                                <outputFile>${project.build.outputDirectory}/my.properties</outputFile> 
+                            </configuration> 
+                        </execution> 
+                    </executions> 
              </plugin>
+            
+             <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>reserve-server-port</id>
+                <goals>
+                  <goal>reserve-network-port</goal>
+                </goals>
+                <phase>process-resources</phase>
+                <configuration>
+                  <portNames>
+                    <portName>hub.p</portName>
+                  </portNames>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+      <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-antrun-plugin</artifactId>
+            <version>3.0.0</version>
+            <executions>
+                <execution>
+                    <id>sleep-for-a-while</id>
+                    <phase>pre-integration-test</phase>
+                    <configuration>
+                        <target>
+                            <sleep seconds="10" />
+                        </target>
+                    </configuration>
+                    <goals>
+                        <goal>run</goal>
+                    </goals>
+                </execution>
+            </executions>
+   </plugin>
+          <!--   
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <executions>
+             
+              <execution>
+                <id>copy-selenium-dependencies</id>
+                <phase>process-resources</phase>
+                <goals>
+                  <goal>copy</goal>
+                </goals>
+                <configuration>
+                  <artifactItems>
+                    <artifactItem>
+                      <groupId>org.seleniumhq.selenium</groupId>
+                      <artifactId>selenium-server</artifactId>
+                      <version>3.141.0</version>
+                      <type>jar</type>
+                      <outputDirectory>${project.basedir}/src/test/resources/</outputDirectory>
+                      <destFileName>selenium-server-standalone.jar</destFileName>
+                      <overWrite>true</overWrite>
+                    </artifactItem>
+                  </artifactItems>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+         -->   
+
+  <plugin>
+               <groupId>org.codehaus.mojo</groupId>
+               <artifactId>exec-maven-plugin</artifactId>
+              <version>3.0.0</version>
+              <executions>
+             <execution>
+                      <id>start-selenium-standalone</id>
+                      <phase>pre-integration-test</phase>
+                      <goals>
+                        <goal>exec</goal>
+                      </goals>
+               <configuration>
+                         <async>true</async>
+                         <executable>java</executable>
+                         <workingDirectory>${project.basedir}/src/test/resources/</workingDirectory>
+                   
+                          <arguments>
+                           
+                            <argument>-jar</argument>
+                            <argument>${project.basedir}/src/test/resources/selenium-server.jar</argument>
+                            
+                            <argument>-role</argument>
+                            <argument>hub</argument>
+                            <argument>-port</argument>
+                            <argument>${hub.p}</argument>
+                          </arguments>
+                        </configuration>   
+            </execution>
+                <execution>
+                  <id>register-node</id>
+                  <phase>pre-integration-test</phase>
+                    
+                  <goals>
+                    <goal>exec</goal>
+                  </goals>
+                </execution>
+                    </executions>
+             <configuration>
+                     <async>true</async>
+                     <executable>java</executable>
+                     <workingDirectory>${project.basedir}/src/test/resources/</workingDirectory>
+                   
+                      <arguments>
+                       
+                          <argument>-Dwebdriver.gecko.driver="${project.basedir}/src/test/resources/geckodriver"</argument>
+                        <argument>-jar</argument>
+                         <argument>${project.basedir}/src/test/resources/selenium-server.jar</argument>
+                        <argument>-role</argument>
+                        <argument>node</argument>
+                        <argument>-browser</argument>
+                        <argument>browserName=firefox,maxInstances=4,platform=ANY</argument>
+                        <argument>-hub</argument>
+                        <argument> http://192.168.1.7:${hub.p}/grid/register</argument>
+                    
+                      </arguments>
+             </configuration>
+    </plugin>
+
+     <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-antrun-plugin</artifactId>
+            <version>3.0.0</version>
+            <executions>
+                <execution>
+                    <id>sleep-after-creating-grid</id>
+                    <phase>pre-integration-test</phase>
+                    <configuration>
+                        <target>
+                            <sleep seconds="5" />
+                        </target>
+                    </configuration>
+                    <goals>
+                        <goal>run</goal>
+                    </goals>
+                </execution>
+            </executions>
+   </plugin>
+            <!--
+            <plugin>
+            <groupId>com.bazaarvoice.maven.plugins</groupId>
+            <artifactId>process-exec-maven-plugin</artifactId>
+            <version>0.9</version>
+            <executions>
+              <execution>
+                <id>start-selenium-hub</id>
+                <phase>pre-integration-test</phase>
+                <goals>
+                  <goal>start</goal>
+                </goals>
+                <configuration>
+                  <workingDir>${project.basedir}/src/test/resources/</workingDir>
+                  <arguments>
+                    <argument>java</argument>
+                    <argument>-Dselenium.LOGGER.level=WARNING</argument>
+                    <argument>-jar</argument>
+                    <argument>selenium-server.jar</argument>
+                    <argument>-role</argument>
+                    <argument>hub</argument>
+                    <argument>-port</argument>
+                    <argument>${hub.port}</argument>
+                  </arguments>
+                  <healthcheckUrl>
+                    http://localhost:${hub.port}/
+                  </healthcheckUrl>
+                  <waitAfterLaunch>60</waitAfterLaunch>
+                </configuration>
+              </execution>
+              <execution>
+                <id>start-selenium-node</id>
+                <phase>pre-integration-test</phase>
+                <goals>
+                  <goal>start</goal>
+                </goals>
+                <configuration>
+                  <workingDir>${project.basedir}/target/</workingDir>
+                  <arguments>
+                    <argument>java</argument>
+                    <argument>-Dselenium.LOGGER.level=WARNING</argument>
+                    <argument>-Dwebdriver.firefox.driver="/Users/amit/Desktop/amit/projects/misc/geckodriver.exe"</argument>
+                    <argument>-jar</argument>
+                    <argument>selenium-server.jar</argument>
+                    <argument>-role</argument>
+                    <argument>node</argument>
+                    <argument>-browser</argument>
+                    <argument>browserName=firefox,maxInstances=1,platform=WINDOWS</argument>
+                    <argument>-hub</argument>
+                    <argument>https://localhost:${hub.port}/grid/register</argument>
+                  </arguments>
+                  <healthcheckUrl>
+                    http://localhost:${hub.port}/
+                  </healthcheckUrl>
+                  <waitAfterLaunch>30</waitAfterLaunch>
+                </configuration>
+              </execution>
+              <execution>
+                <id>stop-selenium</id>
+                <phase>post-integration-test</phase>
+                <goals>
+                  <goal>stop-all</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          -->
              <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-failsafe-plugin</artifactId>
             <version>3.0.0-M5</version>
             <executions>
-              <execution>
+                 <execution>
                   <id>integration-test</id> 
                 <goals>
                   <goal>integration-test</goal>
                   
                 </goals>
+                     <configuration>
+                        <parallel>methods</parallel>
+                         <threadCount>4</threadCount>
+                        <useUnlimitedThreads>true</useUnlimitedThreads>
+                           <systemPropertyVariables>
+                                <hub.port>${hub.p}</hub.port>
+                                 
+                          </systemPropertyVariables>
+                      </configuration>
               </execution>
-             <execution>
-                <id>verify</id>
-                <goals>
-                  <goal>verify</goal>
-                </goals>
-              </execution>  
+         
             </executions>
-              <configuration>
-                <!--
-                  <failIfNoTests>false</failIfNoTests>
-                -->
+         <!--     <configuration>
+                
                 <testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory> 
         
                 <includes>
@@ -156,6 +455,7 @@
                 </includes>
 
                 </configuration>
+                -->
           </plugin>
            <plugin>
         <groupId>org.apache.maven.plugins</groupId>

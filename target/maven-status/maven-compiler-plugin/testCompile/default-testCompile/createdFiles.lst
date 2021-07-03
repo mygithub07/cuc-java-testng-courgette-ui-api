@@ -1,4 +1,13 @@
-com/test/stepdefs/secondIT.class
 com/test/AcceptanceIT.class
-com/test/AcceptanceTestRerunIT.class
+com/test/stepdefs/PageObjects.class
+com/test/stepdefs/secondIT.class
+com/test/stepdefs/InitialIT.class
 com/test/stepdefs/RestAssuredIT.class
+com/test/support/FirefoxManager.class
+com/test/support/DriverFactory.class
+com/test/stepdefs/Helper.class
+com/test/support/ChromeManager.class
+com/test/support/DriverManager.class
+com/test/support/Helpers.class
+com/test/support/Global.class
+com/test/support/addUserPojo.class
