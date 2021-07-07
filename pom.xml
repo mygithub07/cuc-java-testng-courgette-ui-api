@@ -31,7 +31,7 @@
       <aspectj.version>1.9.1</aspectj.version>
     <!-- Test selection properties -->
     <tests.to.run>**/**Test.java</tests.to.run>
-   <!-- <hub.port>${hub.p}</hub.port>-->
+ 
       
   </properties>
     <repositories>
@@ -149,14 +149,7 @@
     <artifactId>httpclient</artifactId>
     <version>4.5.10</version>
 </dependency>
- <!--     
- <dependency>
-    <groupId>io.github.artsok</groupId>
-    <artifactId>rerunner-jupiter</artifactId>
-    <version>2.1.6</version>
-    <scope>test</scope>
-</dependency>
- -->
+
   </dependencies>
     
   <profiles>
@@ -166,35 +159,9 @@
       <activation>
         <activeByDefault>true</activeByDefault>
       </activation>
-   <!--   <properties>
-          <hub.port>${hub.p}</hub.port>
-        </properties>
-  -->
       <build>
-          <!--
-          <resources>
-                         <resource>
-                                <directory>src/test/resources</directory>
-                                <filtering>true</filtering>
-                              <includes>
-                                    <include>pom.properties</include>
-                                </includes>
-                            </resource>
-                </resources>  
-                -->  
+
         <plugins>
-            <!--
-                  <plugin>
-                     <groupId>org.apache.maven.plugins</groupId>
-                     <artifactId>maven-resources-plugin</artifactId>
-                     <version>3.2.0</version>
-                     <configuration>
-                       
-                         <propertiesEncoding>ISO-8859-1</propertiesEncoding>
-                     </configuration>
-                </plugin>  
-                -->
-            
              <plugin>
                     <groupId>org.codehaus.mojo</groupId> 
                     <artifactId>properties-maven-plugin</artifactId> 
@@ -249,36 +216,6 @@
                 </execution>
             </executions>
    </plugin>
-          <!--   
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-dependency-plugin</artifactId>
-            <executions>
-             
-              <execution>
-                <id>copy-selenium-dependencies</id>
-                <phase>process-resources</phase>
-                <goals>
-                  <goal>copy</goal>
-                </goals>
-                <configuration>
-                  <artifactItems>
-                    <artifactItem>
-                      <groupId>org.seleniumhq.selenium</groupId>
-                      <artifactId>selenium-server</artifactId>
-                      <version>3.141.0</version>
-                      <type>jar</type>
-                      <outputDirectory>${project.basedir}/src/test/resources/</outputDirectory>
-                      <destFileName>selenium-server-standalone.jar</destFileName>
-                      <overWrite>true</overWrite>
-                    </artifactItem>
-                  </artifactItems>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-         -->   
-
   <plugin>
                <groupId>org.codehaus.mojo</groupId>
                <artifactId>exec-maven-plugin</artifactId>
@@ -323,7 +260,7 @@
                    
                       <arguments>
                        
-                          <argument>-Dwebdriver.gecko.driver="${project.basedir}/src/test/resources/geckodriver"</argument>
+                          <argument>-Dwebdriver.gecko.driver=${project.basedir}/src/test/resources/geckodriver</argument>
                         <argument>-jar</argument>
                          <argument>${project.basedir}/src/test/resources/selenium-server.jar</argument>
                         <argument>-role</argument>
@@ -336,94 +273,8 @@
                       </arguments>
              </configuration>
     </plugin>
-
-     <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-           <artifactId>maven-antrun-plugin</artifactId>
-            <version>3.0.0</version>
-            <executions>
-                <execution>
-                    <id>sleep-after-creating-grid</id>
-                    <phase>pre-integration-test</phase>
-                    <configuration>
-                        <target>
-                            <sleep seconds="5" />
-                        </target>
-                    </configuration>
-                    <goals>
-                        <goal>run</goal>
-                    </goals>
-                </execution>
-            </executions>
-   </plugin>
-            <!--
+            
             <plugin>
-            <groupId>com.bazaarvoice.maven.plugins</groupId>
-            <artifactId>process-exec-maven-plugin</artifactId>
-            <version>0.9</version>
-            <executions>
-              <execution>
-                <id>start-selenium-hub</id>
-                <phase>pre-integration-test</phase>
-                <goals>
-                  <goal>start</goal>
-                </goals>
-                <configuration>
-                  <workingDir>${project.basedir}/src/test/resources/</workingDir>
-                  <arguments>
-                    <argument>java</argument>
-                    <argument>-Dselenium.LOGGER.level=WARNING</argument>
-                    <argument>-jar</argument>
-                    <argument>selenium-server.jar</argument>
-                    <argument>-role</argument>
-                    <argument>hub</argument>
-                    <argument>-port</argument>
-                    <argument>${hub.port}</argument>
-                  </arguments>
-                  <healthcheckUrl>
-                    http://localhost:${hub.port}/
-                  </healthcheckUrl>
-                  <waitAfterLaunch>60</waitAfterLaunch>
-                </configuration>
-              </execution>
-              <execution>
-                <id>start-selenium-node</id>
-                <phase>pre-integration-test</phase>
-                <goals>
-                  <goal>start</goal>
-                </goals>
-                <configuration>
-                  <workingDir>${project.basedir}/target/</workingDir>
-                  <arguments>
-                    <argument>java</argument>
-                    <argument>-Dselenium.LOGGER.level=WARNING</argument>
-                    <argument>-Dwebdriver.firefox.driver="/Users/amit/Desktop/amit/projects/misc/geckodriver.exe"</argument>
-                    <argument>-jar</argument>
-                    <argument>selenium-server.jar</argument>
-                    <argument>-role</argument>
-                    <argument>node</argument>
-                    <argument>-browser</argument>
-                    <argument>browserName=firefox,maxInstances=1,platform=WINDOWS</argument>
-                    <argument>-hub</argument>
-                    <argument>https://localhost:${hub.port}/grid/register</argument>
-                  </arguments>
-                  <healthcheckUrl>
-                    http://localhost:${hub.port}/
-                  </healthcheckUrl>
-                  <waitAfterLaunch>30</waitAfterLaunch>
-                </configuration>
-              </execution>
-              <execution>
-                <id>stop-selenium</id>
-                <phase>post-integration-test</phase>
-                <goals>
-                  <goal>stop-all</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-          -->
-             <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-failsafe-plugin</artifactId>
             <version>3.0.0-M5</version>
@@ -446,16 +297,7 @@
               </execution>
          
             </executions>
-         <!--     <configuration>
-                
-                <testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory> 
-        
-                <includes>
-                    <include>**/*IT.java</include>
-                </includes>
-
-                </configuration>
-                -->
+   
           </plugin>
            <plugin>
         <groupId>org.apache.maven.plugins</groupId>
