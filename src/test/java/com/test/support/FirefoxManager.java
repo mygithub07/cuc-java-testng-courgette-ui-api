@@ -25,8 +25,9 @@ public class FirefoxManager extends DriverManager{
                  Properties properties = new Properties();
                 ClassLoader loader = Thread.currentThread().getContextClassLoader();
                   System.out.println("hubport from sys prop var.."+System.getProperty("hub.port"));
-                 String hubURL = "http://192.168.1.7:"+System.getProperty("hub.port")+"/wd/hub";
-                //  String hubURL = "http://192.168.1.7:65299/wd/hub";
+                 //String hubURL = "http://192.168.1.7:"+System.getProperty("hub.port")+"/wd/hub";
+               
+                String hubURL = "http://localhost:65299/wd/hub";  //docker hub running on 65299
                   System.setProperty("webdriver.gecko.driver", "/Users/amit/Desktop/amit/projects/misc/geckodriver");
                  
                     FirefoxProfile profile = new FirefoxProfile();

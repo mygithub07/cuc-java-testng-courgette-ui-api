@@ -57,16 +57,16 @@ public class InitialIT  {
         public void AddUser(String fn,String ln,String uname,String pwd, String em, String cellphone) throws MalformedURLException, InterruptedException {
               
              // Thread.sleep(10000);
-             // global.wait.until(ExpectedConditions.visibilityOf(PageObjects.AddUser));
-            global.wait.until(ExpectedConditions.invisibilityOfElementLocated((By) PageObjects.allDom));
+              global.wait.until(ExpectedConditions.visibilityOf(PageObjects.AddUser));
+           // global.wait.until(ExpectedConditions.invisibilityOfElementLocated( PageObjects.allDom));
              // global.jsExecutor.executeScript("arguments[0].click();", PageObjects.AddUser);
-              //  PageObjects.AddUser.click();
+                PageObjects.AddUser.click();
                // PageObjects.AddUser.sendKeys(Keys.ENTER);
             //   Actions builder = new Actions(global.driver); 
             //   Action clickElement = (Action) builder.click(PageObjects.AddUser);
             //   clickElement.perform();
                
-                global.wait.until(ExpectedConditions.visibilityOf(PageObjects.fName));
+             //   global.wait.until(ExpectedConditions.visibilityOf(PageObjects.fName));
                 PageObjects.fName.sendKeys(fn);
                 Thread.sleep(1000);
                 PageObjects.lName.sendKeys(ln);

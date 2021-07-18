@@ -1,14 +1,14 @@
 [ {
   "line" : 1,
   "elements" : [ {
-    "start_timestamp" : "2021-07-07T19:02:03.910Z",
-    "line" : 36,
-    "name" : "Add a user using pojo class in scenario outline using @ParameterType",
+    "start_timestamp" : "2021-07-18T16:21:44.883Z",
+    "line" : 19,
+    "name" : "Add a user and validate the user has been added to the table",
     "description" : "",
-    "id" : "ui-tests;add-a-user-using-pojo-class-in-scenario-outline-using-@parametertype;;3",
+    "id" : "ui-tests;add-a-user-and-validate-the-user-has-been-added-to-the-table;;2",
     "after" : [ {
       "result" : {
-        "duration" : 1037978000,
+        "duration" : 6232149000,
         "status" : "passed"
       },
       "match" : {
@@ -16,7 +16,7 @@
       }
     }, {
       "result" : {
-        "duration" : 515000,
+        "duration" : 1965000,
         "status" : "passed"
       },
       "match" : {
@@ -27,7 +27,203 @@
     "keyword" : "Scenario Outline",
     "steps" : [ {
       "result" : {
-        "duration" : 15127308000,
+        "duration" : 68940424000,
+        "status" : "passed"
+      },
+      "line" : 14,
+      "name" : "I open the site \"http://www.way2automation.com/angularjs-protractor/webtables/\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"http://www.way2automation.com/angularjs-protractor/webtables/\"",
+          "offset" : 16
+        } ],
+        "location" : "com.test.stepdefs.InitialIT.OpenSite(java.lang.String)"
+      },
+      "after" : [ {
+        "result" : {
+          "duration" : 33863000,
+          "status" : "passed"
+        },
+        "match" : {
+          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+        }
+      } ],
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 21432597000,
+        "status" : "passed"
+      },
+      "line" : 15,
+      "name" : "I add  user with the following information \"TestFirstName\" \"TestLastName\" \"testusername\" \"test12345\" \"testuser@testcompany.com\" \"123-456-7890\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"TestFirstName\"",
+          "offset" : 43
+        }, {
+          "val" : "\"TestLastName\"",
+          "offset" : 59
+        }, {
+          "val" : "\"testusername\"",
+          "offset" : 74
+        }, {
+          "val" : "\"test12345\"",
+          "offset" : 89
+        }, {
+          "val" : "\"testuser@testcompany.com\"",
+          "offset" : 101
+        }, {
+          "val" : "\"123-456-7890\"",
+          "offset" : 128
+        } ],
+        "location" : "com.test.stepdefs.InitialIT.AddUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+      },
+      "after" : [ {
+        "result" : {
+          "duration" : 766000,
+          "status" : "passed"
+        },
+        "match" : {
+          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+        }
+      } ],
+      "keyword" : "When "
+    } ]
+  } ],
+  "name" : "UI Tests",
+  "description" : "",
+  "id" : "ui-tests",
+  "keyword" : "Feature",
+  "uri" : "file:src/test/resources/com/test/InitialTest.feature",
+  "tags" : [ ]
+} , {
+  "line" : 1,
+  "elements" : [ {
+    "start_timestamp" : "2021-07-18T16:21:45.198Z",
+    "line" : 20,
+    "name" : "Add a user and validate the user has been added to the table",
+    "description" : "",
+    "id" : "ui-tests;add-a-user-and-validate-the-user-has-been-added-to-the-table;;3",
+    "after" : [ {
+      "result" : {
+        "duration" : 6723790000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.InitialIT.closeBrowser()"
+      }
+    }, {
+      "result" : {
+        "duration" : 2952000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.RestAssuredIT.afterEverything()"
+      }
+    } ],
+    "type" : "scenario",
+    "keyword" : "Scenario Outline",
+    "steps" : [ {
+      "result" : {
+        "duration" : 72864322000,
+        "status" : "passed"
+      },
+      "line" : 14,
+      "name" : "I open the site \"http://www.way2automation.com/angularjs-protractor/webtables/\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"http://www.way2automation.com/angularjs-protractor/webtables/\"",
+          "offset" : 16
+        } ],
+        "location" : "com.test.stepdefs.InitialIT.OpenSite(java.lang.String)"
+      },
+      "after" : [ {
+        "result" : {
+          "duration" : 48073000,
+          "status" : "passed"
+        },
+        "match" : {
+          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+        }
+      } ],
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 20187115000,
+        "status" : "passed"
+      },
+      "line" : 15,
+      "name" : "I add  user with the following information \"TestFirstName1\" \"TestLastName1\" \"testusername1\" \"test123456\" \"testuser1@testcompany.com\" \"123-456-1000\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"TestFirstName1\"",
+          "offset" : 43
+        }, {
+          "val" : "\"TestLastName1\"",
+          "offset" : 60
+        }, {
+          "val" : "\"testusername1\"",
+          "offset" : 76
+        }, {
+          "val" : "\"test123456\"",
+          "offset" : 92
+        }, {
+          "val" : "\"testuser1@testcompany.com\"",
+          "offset" : 105
+        }, {
+          "val" : "\"123-456-1000\"",
+          "offset" : 133
+        } ],
+        "location" : "com.test.stepdefs.InitialIT.AddUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+      },
+      "after" : [ {
+        "result" : {
+          "duration" : 654000,
+          "status" : "passed"
+        },
+        "match" : {
+          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+        }
+      } ],
+      "keyword" : "When "
+    } ]
+  } ],
+  "name" : "UI Tests",
+  "description" : "",
+  "id" : "ui-tests",
+  "keyword" : "Feature",
+  "uri" : "file:src/test/resources/com/test/InitialTest.feature",
+  "tags" : [ ]
+} , {
+  "line" : 1,
+  "elements" : [ {
+    "start_timestamp" : "2021-07-18T16:21:44.977Z",
+    "line" : 36,
+    "name" : "Add a user using pojo class in scenario outline using @ParameterType",
+    "description" : "",
+    "id" : "ui-tests;add-a-user-using-pojo-class-in-scenario-outline-using-@parametertype;;3",
+    "after" : [ {
+      "result" : {
+        "duration" : 8144129000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.InitialIT.closeBrowser()"
+      }
+    }, {
+      "result" : {
+        "duration" : 625000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.RestAssuredIT.afterEverything()"
+      }
+    } ],
+    "type" : "scenario",
+    "keyword" : "Scenario Outline",
+    "steps" : [ {
+      "result" : {
+        "duration" : 62475470000,
         "status" : "passed"
       },
       "line" : 30,
@@ -41,7 +237,7 @@
       },
       "after" : [ {
         "result" : {
-          "duration" : 25952000,
+          "duration" : 64129000,
           "status" : "passed"
         },
         "match" : {
@@ -51,7 +247,7 @@
       "keyword" : "Given "
     }, {
       "result" : {
-        "duration" : 13352647000,
+        "duration" : 28158038000,
         "status" : "passed"
       },
       "line" : 31,
@@ -65,7 +261,7 @@
       },
       "after" : [ {
         "result" : {
-          "duration" : 4104000,
+          "duration" : 2912000,
           "status" : "passed"
         },
         "match" : {
@@ -75,7 +271,7 @@
       "keyword" : "When "
     }, {
       "result" : {
-        "duration" : 160067000,
+        "duration" : 160433000,
         "status" : "passed"
       },
       "line" : 32,
@@ -89,7 +285,7 @@
       },
       "after" : [ {
         "result" : {
-          "duration" : 1513000,
+          "duration" : 2289000,
           "status" : "passed"
         },
         "match" : {
@@ -108,98 +304,14 @@
 } , {
   "line" : 1,
   "elements" : [ {
-    "start_timestamp" : "2021-07-07T19:02:04.056Z",
-    "line" : 22,
-    "name" : "Add a user using pojo class in a scenario using data table and @DataTableType",
-    "description" : "",
-    "id" : "ui-tests;add-a-user-using-pojo-class-in-a-scenario-using-data-table-and-@datatabletype",
-    "after" : [ {
-      "result" : {
-        "duration" : 1027504000,
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "com.test.stepdefs.InitialIT.closeBrowser()"
-      }
-    }, {
-      "result" : {
-        "duration" : 1724000,
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "com.test.stepdefs.RestAssuredIT.afterEverything()"
-      }
-    } ],
-    "type" : "scenario",
-    "keyword" : "Scenario",
-    "steps" : [ {
-      "result" : {
-        "duration" : 15313491000,
-        "status" : "passed"
-      },
-      "line" : 23,
-      "name" : "I open the site \"http://www.way2automation.com/angularjs-protractor/webtables/\"",
-      "match" : {
-        "arguments" : [ {
-          "val" : "\"http://www.way2automation.com/angularjs-protractor/webtables/\"",
-          "offset" : 16
-        } ],
-        "location" : "com.test.stepdefs.InitialIT.OpenSite(java.lang.String)"
-      },
-      "after" : [ {
-        "result" : {
-          "duration" : 279851000,
-          "status" : "passed"
-        },
-        "match" : {
-          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
-        }
-      } ],
-      "keyword" : "Given "
-    }, {
-      "result" : {
-        "duration" : 12780887000,
-        "status" : "passed"
-      },
-      "line" : 24,
-      "name" : "I add  user with passing info to pojo class",
-      "match" : {
-        "location" : "com.test.stepdefs.InitialIT.AddUserWithPOJO(java.util.List<com.test.support.addUserPojo>)"
-      },
-      "after" : [ {
-        "result" : {
-          "duration" : 875000,
-          "status" : "passed"
-        },
-        "match" : {
-          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
-        }
-      } ],
-      "rows" : [ {
-        "cells" : [ "FirstName", "LastName", "username", "password", "Email", "CellPhone" ]
-      }, {
-        "cells" : [ "TestFirstName3", "TestLastName3", "testusername3", "test67890", "testuser3@testcompany3.com", "456-789-1122" ]
-      } ],
-      "keyword" : "When "
-    } ]
-  } ],
-  "name" : "UI Tests",
-  "description" : "",
-  "id" : "ui-tests",
-  "keyword" : "Feature",
-  "uri" : "file:src/test/resources/com/test/InitialTest.feature",
-  "tags" : [ ]
-} , {
-  "line" : 1,
-  "elements" : [ {
-    "start_timestamp" : "2021-07-07T19:02:04.006Z",
+    "start_timestamp" : "2021-07-18T16:21:45.158Z",
     "line" : 35,
     "name" : "Add a user using pojo class in scenario outline using @ParameterType",
     "description" : "",
     "id" : "ui-tests;add-a-user-using-pojo-class-in-scenario-outline-using-@parametertype;;2",
     "after" : [ {
       "result" : {
-        "duration" : 1407478000,
+        "duration" : 7513039000,
         "status" : "passed"
       },
       "match" : {
@@ -207,7 +319,7 @@
       }
     }, {
       "result" : {
-        "duration" : 550000,
+        "duration" : 702000,
         "status" : "passed"
       },
       "match" : {
@@ -218,7 +330,7 @@
     "keyword" : "Scenario Outline",
     "steps" : [ {
       "result" : {
-        "duration" : 15239141000,
+        "duration" : 68817579000,
         "status" : "passed"
       },
       "line" : 30,
@@ -232,7 +344,7 @@
       },
       "after" : [ {
         "result" : {
-          "duration" : 24097000,
+          "duration" : 35065000,
           "status" : "passed"
         },
         "match" : {
@@ -242,7 +354,7 @@
       "keyword" : "Given "
     }, {
       "result" : {
-        "duration" : 13916495000,
+        "duration" : 22266441000,
         "status" : "passed"
       },
       "line" : 31,
@@ -256,7 +368,7 @@
       },
       "after" : [ {
         "result" : {
-          "duration" : 597000,
+          "duration" : 909000,
           "status" : "passed"
         },
         "match" : {
@@ -266,7 +378,7 @@
       "keyword" : "When "
     }, {
       "result" : {
-        "duration" : 83466000,
+        "duration" : 175519000,
         "status" : "passed"
       },
       "line" : 32,
@@ -280,7 +392,7 @@
       },
       "after" : [ {
         "result" : {
-          "duration" : 5423000,
+          "duration" : 3358000,
           "status" : "passed"
         },
         "match" : {
@@ -288,6 +400,90 @@
         }
       } ],
       "keyword" : "Then "
+    } ]
+  } ],
+  "name" : "UI Tests",
+  "description" : "",
+  "id" : "ui-tests",
+  "keyword" : "Feature",
+  "uri" : "file:src/test/resources/com/test/InitialTest.feature",
+  "tags" : [ ]
+} , {
+  "line" : 1,
+  "elements" : [ {
+    "start_timestamp" : "2021-07-18T16:21:44.968Z",
+    "line" : 22,
+    "name" : "Add a user using pojo class in a scenario using data table and @DataTableType",
+    "description" : "",
+    "id" : "ui-tests;add-a-user-using-pojo-class-in-a-scenario-using-data-table-and-@datatabletype",
+    "after" : [ {
+      "result" : {
+        "duration" : 5746685000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.InitialIT.closeBrowser()"
+      }
+    }, {
+      "result" : {
+        "duration" : 2664000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.RestAssuredIT.afterEverything()"
+      }
+    } ],
+    "type" : "scenario",
+    "keyword" : "Scenario",
+    "steps" : [ {
+      "result" : {
+        "duration" : 66478102000,
+        "status" : "passed"
+      },
+      "line" : 23,
+      "name" : "I open the site \"http://www.way2automation.com/angularjs-protractor/webtables/\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"http://www.way2automation.com/angularjs-protractor/webtables/\"",
+          "offset" : 16
+        } ],
+        "location" : "com.test.stepdefs.InitialIT.OpenSite(java.lang.String)"
+      },
+      "after" : [ {
+        "result" : {
+          "duration" : 29300000,
+          "status" : "passed"
+        },
+        "match" : {
+          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+        }
+      } ],
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 23577002000,
+        "status" : "passed"
+      },
+      "line" : 24,
+      "name" : "I add  user with passing info to pojo class",
+      "match" : {
+        "location" : "com.test.stepdefs.InitialIT.AddUserWithPOJO(java.util.List<com.test.support.addUserPojo>)"
+      },
+      "after" : [ {
+        "result" : {
+          "duration" : 951000,
+          "status" : "passed"
+        },
+        "match" : {
+          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+        }
+      } ],
+      "rows" : [ {
+        "cells" : [ "FirstName", "LastName", "username", "password", "Email", "CellPhone" ]
+      }, {
+        "cells" : [ "TestFirstName3", "TestLastName3", "testusername3", "test67890", "testuser3@testcompany3.com", "456-789-1122" ]
+      } ],
+      "keyword" : "When "
     } ]
   } ],
   "name" : "UI Tests",

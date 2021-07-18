@@ -1,0 +1,522 @@
+# Created at 2021-07-18T12:21:38.523
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Java HotSpot(TM) 64-Bit Server VM warning: Ignoring system property options whose names match the '-Djdk.module.*'. names that are reserved for internal use.'.
+
+# Created at 2021-07-18T12:21:38.526
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Java HotSpot(TM) 64-Bit Server VM warning: Ignoring system property options whose names match the '-Djdk.module.*'. names that are reserved for internal use.'.
+
+# Created at 2021-07-18T12:21:38.527
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Java HotSpot(TM) 64-Bit Server VM warning: Ignoring system property options whose names match the '-Djdk.module.*'. names that are reserved for internal use.'.
+
+# Created at 2021-07-18T12:21:38.527
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Java HotSpot(TM) 64-Bit Server VM warning: Ignoring system property options whose names match the '-Djdk.module.*'. names that are reserved for internal use.'.
+
+# Created at 2021-07-18T12:21:38.529
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Java HotSpot(TM) 64-Bit Server VM warning: Ignoring system property options whose names match the '-Djdk.module.*'. names that are reserved for internal use.'.
+
+# Created at 2021-07-18T12:21:44.887
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Scenario Outline: Add a user and validate the user has been added to the table                                                                        [90m# src/test/resources/com/test/InitialTest.feature:'.
+
+# Created at 2021-07-18T12:21:44.887
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '19[0m'.
+
+# Created at 2021-07-18T12:21:44.987
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Scenario Outline: Add a user using pojo class in scenario outline using @ParameterType                                                                         [90m# src/test/resources/com/test/InitialTest.feature:'.
+
+# Created at 2021-07-18T12:21:44.988
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '36[0m'.
+
+# Created at 2021-07-18T12:21:45.023
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Scenario: Add a user using pojo class in a scenario using data table and @DataTableType [90m# src/test/resources/com/test/InitialTest.feature:'.
+
+# Created at 2021-07-18T12:21:45.023
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '22[0m'.
+
+# Created at 2021-07-18T12:21:45.164
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Scenario Outline: Add a user using pojo class in scenario outline using @ParameterType                                                                          [90m# src/test/resources/com/test/InitialTest.feature:'.
+
+# Created at 2021-07-18T12:21:45.164
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '35[0m'.
+
+# Created at 2021-07-18T12:21:45.202
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Scenario Outline: Add a user and validate the user has been added to the table                                                                             [90m# src/test/resources/com/test/InitialTest.feature:'.
+
+# Created at 2021-07-18T12:21:45.202
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '20[0m'.
+
+# Created at 2021-07-18T12:21:45.545
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: An illegal reflective access operation has occurred'.
+
+# Created at 2021-07-18T12:21:45.546
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:'.
+
+# Created at 2021-07-18T12:21:45.546
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '/Users/amit/.m2/repository/com/google/inject/guice/4.2.3/guice-4.2.3.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)'.
+
+# Created at 2021-07-18T12:21:45.547
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1'.
+
+# Created at 2021-07-18T12:21:45.547
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations'.
+
+# Created at 2021-07-18T12:21:45.548
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: All illegal access operations will be denied in a future release'.
+
+# Created at 2021-07-18T12:21:45.615
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: An illegal reflective access operation has occurred'.
+
+# Created at 2021-07-18T12:21:45.616
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:'.
+
+# Created at 2021-07-18T12:21:45.616
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '/Users/amit/.m2/repository/com/google/inject/guice/4.2.3/guice-4.2.3.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)'.
+
+# Created at 2021-07-18T12:21:45.616
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1'.
+
+# Created at 2021-07-18T12:21:45.617
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations'.
+
+# Created at 2021-07-18T12:21:45.617
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: All illegal access operations will be denied in a future release'.
+
+# Created at 2021-07-18T12:21:45.630
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'hubport from sys prop var..61571'.
+
+# Created at 2021-07-18T12:21:45.676
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: An illegal reflective access operation has occurred'.
+
+# Created at 2021-07-18T12:21:45.677
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:'.
+
+# Created at 2021-07-18T12:21:45.677
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '/Users/amit/.m2/repository/com/google/inject/guice/4.2.3/guice-4.2.3.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)'.
+
+# Created at 2021-07-18T12:21:45.678
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1'.
+
+# Created at 2021-07-18T12:21:45.678
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations'.
+
+# Created at 2021-07-18T12:21:45.678
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: All illegal access operations will be denied in a future release'.
+
+# Created at 2021-07-18T12:21:45.724
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'hubport from sys prop var..61571'.
+
+# Created at 2021-07-18T12:21:45.766
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: An illegal reflective access operation has occurred'.
+
+# Created at 2021-07-18T12:21:45.767
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:'.
+
+# Created at 2021-07-18T12:21:45.767
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '/Users/amit/.m2/repository/com/google/inject/guice/4.2.3/guice-4.2.3.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)'.
+
+# Created at 2021-07-18T12:21:45.768
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1'.
+
+# Created at 2021-07-18T12:21:45.768
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations'.
+
+# Created at 2021-07-18T12:21:45.769
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: All illegal access operations will be denied in a future release'.
+
+# Created at 2021-07-18T12:21:45.832
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'hubport from sys prop var..61571'.
+
+# Created at 2021-07-18T12:21:45.844
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: An illegal reflective access operation has occurred'.
+
+# Created at 2021-07-18T12:21:45.844
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:'.
+
+# Created at 2021-07-18T12:21:45.845
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '/Users/amit/.m2/repository/com/google/inject/guice/4.2.3/guice-4.2.3.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)'.
+
+# Created at 2021-07-18T12:21:45.845
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1'.
+
+# Created at 2021-07-18T12:21:45.845
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations'.
+
+# Created at 2021-07-18T12:21:45.845
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'WARNING: All illegal access operations will be denied in a future release'.
+
+# Created at 2021-07-18T12:21:45.970
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Jul 18, 2021 12:21:'.
+
+# Created at 2021-07-18T12:21:45.970
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '45 PM org.openqa.selenium.remote.DesiredCapabilities firefox'.
+
+# Created at 2021-07-18T12:21:45.971
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`'.
+
+# Created at 2021-07-18T12:21:46.019
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'hubport from sys prop var..61571'.
+
+# Created at 2021-07-18T12:21:46.096
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'hubport from sys prop var..61571'.
+
+# Created at 2021-07-18T12:21:46.127
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Jul 18, 2021 12:21:'.
+
+# Created at 2021-07-18T12:21:46.127
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '46 PM org.openqa.selenium.remote.DesiredCapabilities firefox'.
+
+# Created at 2021-07-18T12:21:46.128
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`'.
+
+# Created at 2021-07-18T12:21:46.202
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Jul 18, 2021 12:21:'.
+
+# Created at 2021-07-18T12:21:46.203
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '46 PM org.openqa.selenium.remote.DesiredCapabilities firefox'.
+
+# Created at 2021-07-18T12:21:46.204
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`'.
+
+# Created at 2021-07-18T12:21:46.252
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Jul 18, 2021 12:21:'.
+
+# Created at 2021-07-18T12:21:46.253
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '46 PM org.openqa.selenium.remote.DesiredCapabilities firefox'.
+
+# Created at 2021-07-18T12:21:46.253
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`'.
+
+# Created at 2021-07-18T12:21:46.289
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Jul 18, 2021 12:21:'.
+
+# Created at 2021-07-18T12:21:46.290
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '46 PM org.openqa.selenium.remote.DesiredCapabilities firefox'.
+
+# Created at 2021-07-18T12:21:46.290
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`'.
+
+# Created at 2021-07-18T12:22:24.121
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Jul 18, 2021 12:22:'.
+
+# Created at 2021-07-18T12:22:24.124
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '24 PM org.openqa.selenium.remote.ProtocolHandshake createSession'.
+
+# Created at 2021-07-18T12:22:24.124
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'INFO: Detected dialect:'.
+
+# Created at 2021-07-18T12:22:24.125
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'W3C'.
+
+# Created at 2021-07-18T12:22:24.191
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: No SLF4J providers were found.'.
+
+# Created at 2021-07-18T12:22:24.192
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: Defaulting to no-operation (NOP) logger implementation'.
+
+# Created at 2021-07-18T12:22:24.194
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: See http:'.
+
+# Created at 2021-07-18T12:22:24.194
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '//www.slf4j.org/codes.html#noProviders for further details.'.
+
+# Created at 2021-07-18T12:22:24.801
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Jul 18, 2021 12:22:'.
+
+# Created at 2021-07-18T12:22:24.801
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '24 PM org.openqa.selenium.remote.ProtocolHandshake createSession'.
+
+# Created at 2021-07-18T12:22:24.802
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'INFO: Detected dialect:'.
+
+# Created at 2021-07-18T12:22:24.802
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'W3C'.
+
+# Created at 2021-07-18T12:22:24.871
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: No SLF4J providers were found.'.
+
+# Created at 2021-07-18T12:22:24.872
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: Defaulting to no-operation (NOP) logger implementation'.
+
+# Created at 2021-07-18T12:22:24.872
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: See http:'.
+
+# Created at 2021-07-18T12:22:24.872
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '//www.slf4j.org/codes.html#noProviders for further details.'.
+
+# Created at 2021-07-18T12:22:24.975
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Jul 18, 2021 12:22:'.
+
+# Created at 2021-07-18T12:22:24.975
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '24 PM org.openqa.selenium.remote.ProtocolHandshake createSession'.
+
+# Created at 2021-07-18T12:22:24.976
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'INFO: Detected dialect:'.
+
+# Created at 2021-07-18T12:22:24.976
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'W3C'.
+
+# Created at 2021-07-18T12:22:25.083
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: No SLF4J providers were found.'.
+
+# Created at 2021-07-18T12:22:25.083
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: Defaulting to no-operation (NOP) logger implementation'.
+
+# Created at 2021-07-18T12:22:25.084
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: See http:'.
+
+# Created at 2021-07-18T12:22:25.084
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '//www.slf4j.org/codes.html#noProviders for further details.'.
+
+# Created at 2021-07-18T12:22:30.444
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Jul 18, 2021 12:22:'.
+
+# Created at 2021-07-18T12:22:30.448
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '30 PM org.openqa.selenium.remote.ProtocolHandshake createSession'.
+
+# Created at 2021-07-18T12:22:30.448
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'INFO: Detected dialect:'.
+
+# Created at 2021-07-18T12:22:30.449
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'W3C'.
+
+# Created at 2021-07-18T12:22:30.693
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: No SLF4J providers were found.'.
+
+# Created at 2021-07-18T12:22:30.693
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: Defaulting to no-operation (NOP) logger implementation'.
+
+# Created at 2021-07-18T12:22:30.694
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: See http:'.
+
+# Created at 2021-07-18T12:22:30.694
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '//www.slf4j.org/codes.html#noProviders for further details.'.
+
+# Created at 2021-07-18T12:22:34.053
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Jul 18, 2021 12:22:'.
+
+# Created at 2021-07-18T12:22:34.054
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '34 PM org.openqa.selenium.remote.ProtocolHandshake createSession'.
+
+# Created at 2021-07-18T12:22:34.054
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'INFO: Detected dialect:'.
+
+# Created at 2021-07-18T12:22:34.055
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'W3C'.
+
+# Created at 2021-07-18T12:22:34.131
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: No SLF4J providers were found.'.
+
+# Created at 2021-07-18T12:22:34.131
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: Defaulting to no-operation (NOP) logger implementation'.
+
+# Created at 2021-07-18T12:22:34.132
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'SLF4J: See http:'.
+
+# Created at 2021-07-18T12:22:34.132
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '//www.slf4j.org/codes.html#noProviders for further details.'.
+
+# Created at 2021-07-18T12:22:47.944
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[32mGiven [0m[32mI open the site [0m[32m[1m"http://www.way2automation.com/angularjs-protractor/webtables/"[0m                                                                        [90m# com.test.stepdefs.InitialIT.OpenSite(java.lang.String)[0m'.
+
+# Created at 2021-07-18T12:22:48.056
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '***after every step****'.
+
+# Created at 2021-07-18T12:22:48.080
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Thread ID -  1 When -  pojo scenario outline'.
+
+# Created at 2021-07-18T12:22:48.081
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'firstname...TestFirstName5k'.
+
+# Created at 2021-07-18T12:22:48.083
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'LastName...TestLastName5'.
+
+# Created at 2021-07-18T12:22:48.084
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'username...testusername5'.
+
+# Created at 2021-07-18T12:22:48.084
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'pwd...test67890'.
+
+# Created at 2021-07-18T12:22:48.085
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'email...testuser5@testcompany5.com'.
+
+# Created at 2021-07-18T12:22:48.085
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'cellphone...456-789-1122'.
+
+# Created at 2021-07-18T12:22:51.802
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[32mGiven [0m[32mI open the site [0m[32m[1m"http://www.way2automation.com/angularjs-protractor/webtables/"[0m [90m# com.test.stepdefs.InitialIT.OpenSite(java.lang.String)[0m'.
+
+# Created at 2021-07-18T12:22:51.862
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '***after every step****'.
+
+# Created at 2021-07-18T12:22:51.875
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Thread ID - 1- When - pojo scenario only'.
+
+# Created at 2021-07-18T12:22:51.875
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'firstname...TestFirstName3k'.
+
+# Created at 2021-07-18T12:22:51.876
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'LastName...TestLastName3'.
+
+# Created at 2021-07-18T12:22:51.877
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'username...testusername3'.
+
+# Created at 2021-07-18T12:22:51.877
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'pwd...test67890'.
+
+# Created at 2021-07-18T12:22:51.878
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'email...testuser3@testcompany3.com'.
+
+# Created at 2021-07-18T12:22:51.879
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'cellphone...456-789-1122'.
+
+# Created at 2021-07-18T12:22:54.181
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[32mGiven [0m[32mI open the site [0m[32m[1m"http://www.way2automation.com/angularjs-protractor/webtables/"[0m                                                               [90m# com.test.stepdefs.InitialIT.OpenSite(java.lang.String)[0m'.
+
+# Created at 2021-07-18T12:22:54.246
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '***after every step****'.
+
+# Created at 2021-07-18T12:22:54.324
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[32mGiven [0m[32mI open the site [0m[32m[1m"http://www.way2automation.com/angularjs-protractor/webtables/"[0m                                                                         [90m# com.test.stepdefs.InitialIT.OpenSite(java.lang.String)[0m'.
+
+# Created at 2021-07-18T12:22:54.396
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '***after every step****'.
+
+# Created at 2021-07-18T12:22:54.402
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Thread ID -  1 When -  pojo scenario outline'.
+
+# Created at 2021-07-18T12:22:54.403
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'firstname...TestFirstName4k'.
+
+# Created at 2021-07-18T12:22:54.403
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'LastName...TestLastName4'.
+
+# Created at 2021-07-18T12:22:54.404
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'username...testusername4'.
+
+# Created at 2021-07-18T12:22:54.404
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'pwd...test98760'.
+
+# Created at 2021-07-18T12:22:54.407
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'email...testuser4@testcompany4.com'.
+
+# Created at 2021-07-18T12:22:54.407
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'cellphone...7890-123-2233'.
+
+# Created at 2021-07-18T12:22:58.450
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[32mGiven [0m[32mI open the site [0m[32m[1m"http://www.way2automation.com/angularjs-protractor/webtables/"[0m                                                                    [90m# com.test.stepdefs.InitialIT.OpenSite(java.lang.String)[0m'.
+
+# Created at 2021-07-18T12:22:58.535
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '***after every step****'.
+
+# Created at 2021-07-18T12:23:15.441
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[32mWhen [0m[32mI add  user with passing info to pojo class[0m                                      [90m# com.test.stepdefs.InitialIT.AddUserWithPOJO(java.util.List<com.test.support.addUserPojo>)[0m'.
+
+# Created at 2021-07-18T12:23:15.446
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '***after every step****'.
+
+# Created at 2021-07-18T12:23:15.680
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[32mWhen [0m[32mI add  user with the following information [0m[32m[1m"TestFirstName"[0m[32m [0m[32m[1m"TestLastName"[0m[32m [0m[32m[1m"testusername"[0m[32m [0m[32m[1m"test12345"[0m[32m [0m[32m[1m"testuser@testcompany.com"[0m[32m [0m[32m[1m"123-456-7890"[0m [90m# com.test.stepdefs.InitialIT.AddUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[0m'.
+
+# Created at 2021-07-18T12:23:15.685
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '***after every step****'.
+
+# Created at 2021-07-18T12:23:16.222
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[32mWhen [0m[32mI add  user by passing [0m[32m[1mTestFirstName5,TestLastName5,testusername5,test67890,testuser5@testcompany5.com,456-789-1122[0m[32m to pojo class from scenario outline[0m [90m# com.test.stepdefs.InitialIT.AddUserWithPOJOScOut(com.test.support.addUserPojo)[0m'.
+
+# Created at 2021-07-18T12:23:16.233
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '***after every step****'.
+
+# Created at 2021-07-18T12:23:16.237
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Thread ID -Then -  pojo scenario outline'.
+
+# Created at 2021-07-18T12:23:16.237
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'username after addition testusername5'.
+
+# Created at 2021-07-18T12:23:16.396
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[32mThen [0m[32mI see user [0m[32m[1mTestFirstName5,TestLastName5,testusername5,test67890,testuser5@testcompany5.com,456-789-1122[0m[32m added to the table[0m                              [90m# com.test.stepdefs.InitialIT.userAddedParamType(com.test.support.addUserPojo)[0m'.
+
+# Created at 2021-07-18T12:23:16.399
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '***after every step****'.
+
+# Created at 2021-07-18T12:23:16.667
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[32mWhen [0m[32mI add  user by passing [0m[32m[1mTestFirstName4,TestLastName4,testusername4,test98760,testuser4@testcompany4.com,7890-123-2233[0m[32m to pojo class from scenario outline[0m [90m# com.test.stepdefs.InitialIT.AddUserWithPOJOScOut(com.test.support.addUserPojo)[0m'.
+
+# Created at 2021-07-18T12:23:16.677
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '***after every step****'.
+
+# Created at 2021-07-18T12:23:16.684
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Thread ID -Then -  pojo scenario outline'.
+
+# Created at 2021-07-18T12:23:16.685
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'username after addition testusername4'.
+
+# Created at 2021-07-18T12:23:16.855
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[32mThen [0m[32mI see user [0m[32m[1mTestFirstName4,TestLastName4,testusername4,test98760,testuser4@testcompany4.com,7890-123-2233[0m[32m added to the table[0m                              [90m# com.test.stepdefs.InitialIT.userAddedParamType(com.test.support.addUserPojo)[0m'.
+
+# Created at 2021-07-18T12:23:16.858
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '***after every step****'.
+
+# Created at 2021-07-18T12:23:18.722
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '[32mWhen [0m[32mI add  user with the following information [0m[32m[1m"TestFirstName1"[0m[32m [0m[32m[1m"TestLastName1"[0m[32m [0m[32m[1m"testusername1"[0m[32m [0m[32m[1m"test123456"[0m[32m [0m[32m[1m"testuser1@testcompany.com"[0m[32m [0m[32m[1m"123-456-1000"[0m [90m# com.test.stepdefs.InitialIT.AddUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[0m'.
+
+# Created at 2021-07-18T12:23:18.727
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '***after every step****'.
+
+# Created at 2021-07-18T12:23:21.200
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '***after everything****'.
+
+# Created at 2021-07-18T12:23:21.649
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '1 Scenarios ([32m1 passed[0m)'.
+
+# Created at 2021-07-18T12:23:21.651
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '2 Steps ([32m2 passed[0m)'.
+
+# Created at 2021-07-18T12:23:21.656
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '1m39.104s'.
+
+# Created at 2021-07-18T12:23:21.924
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '***after everything****'.
+
+# Created at 2021-07-18T12:23:22.272
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '1 Scenarios ([32m1 passed[0m)'.
+
+# Created at 2021-07-18T12:23:22.272
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '2 Steps ([32m2 passed[0m)'.
+
+# Created at 2021-07-18T12:23:22.275
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '1m39.906s'.
+
+# Created at 2021-07-18T12:23:24.386
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '***after everything****'.
+
+# Created at 2021-07-18T12:23:24.550
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '***after everything****'.
+
+# Created at 2021-07-18T12:23:24.766
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '1 Scenarios ([32m1 passed[0m)'.
+
+# Created at 2021-07-18T12:23:24.766
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '3 Steps ([32m3 passed[0m)'.
+
+# Created at 2021-07-18T12:23:24.770
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '1m42.184s'.
+
+# Created at 2021-07-18T12:23:24.822
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '1 Scenarios ([32m1 passed[0m)'.
+
+# Created at 2021-07-18T12:23:24.823
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '3 Steps ([32m3 passed[0m)'.
+
+# Created at 2021-07-18T12:23:24.839
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '1m42.434s'.
+
+# Created at 2021-07-18T12:23:25.456
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '***after everything****'.
+
+# Created at 2021-07-18T12:23:25.729
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '1 Scenarios ([32m1 passed[0m)'.
+
+# Created at 2021-07-18T12:23:25.730
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '2 Steps ([32m2 passed[0m)'.
+
+# Created at 2021-07-18T12:23:25.734
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '1m43.214s'.
+
