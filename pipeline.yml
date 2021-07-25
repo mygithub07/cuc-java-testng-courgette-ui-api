@@ -12,19 +12,41 @@ stages:
      displayName: Build and Push
      pool:
         vmImage: 'ubuntu-latest'
-     steps:
-      - task: Docker@2
-        inputs:
-           containerRegistry: 'Dockerhub'
-           repository: 'ghoshasish99/cits-test'
-           command: 'buildAndPush'
-           Dockerfile: '**/Dockerfile'
-      - task: CopyFiles@2
-        inputs:
-           Contents: 'docker-compose.yml'
-           TargetFolder: '$(Build.ArtifactStagingDirectory)'
-      - task: PublishBuildArtifacts@1
-        inputs:
-           PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-           ArtifactName: 'drop'
-           publishLocation: 'Container'
+     variables:
+       azureSubscriptionEndpoint: Azure subscription 1
+       steps:
+         - task: DockerCompose@0
+           displayName: Container registry login
+           inputs:
+             containerregistrytype: Container Registry
+             dockerRegistryEndpoint: Dockerhub
+             
+         - task: DockerCompose@0
+           displayName: Build services
+           inputs:
+             action: Build services
+             azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
+             dockerComposeFile: docker-compose.yml
+             projectName: $(Build.Repository.Name)
+             qualifyImageNames: true
+             additionalImageTags: $(Build.BuildId)
+               
+         - task: DockerCompose@0
+           displayName: Push services
+           inputs:
+             action: Push services
+             azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
+             dockerComposeFile: docker-compose.yml
+             projectName: $(Build.Repository.Name)
+             qualifyImageNames: true
+             additionalImageTags: $(Build.BuildId)
+
+         - task: DockerCompose@0
+           displayName: Run Tests
+           inputs:
+             containerregistrytype: 'Container Registry'
+             dockerRegistryEndpoint: Dockerhub
+             dockerComposeFile: '**/docker-compose.yml'
+             action: 'Run a Docker Compose command'
+             dockerComposeCommand: 'up'
+             detached: false
