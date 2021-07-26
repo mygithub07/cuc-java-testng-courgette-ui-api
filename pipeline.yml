@@ -35,7 +35,7 @@ stages:
        displayName: Push services
        inputs:
          action: Push services
-         azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
+         azureSubscriptionEndpoint: serviceConnection07
          dockerComposeFile: docker-compose.yml
          projectName: $(Build.Repository.Name)
          qualifyImageNames: true
