@@ -12,8 +12,8 @@ stages:
      displayName: Build and Push
      pool:
         vmImage: 'ubuntu-latest'
-     variables:
-       azureSubscriptionEndpoint: 'serviceConnection07'
+     #variables:
+       #azureSubscriptionEndpoint: 'serviceConnection07'
      steps:
      - task: DockerCompose@0
        displayName: Container registry login
@@ -25,7 +25,7 @@ stages:
        displayName: Build services
        inputs:
          action: Build services
-         azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
+         azureSubscriptionEndpoint: serviceConnection07
          dockerComposeFile: docker-compose.yml
          projectName: $(Build.Repository.Name)
          qualifyImageNames: true
