@@ -42,13 +42,13 @@ stages:
        #  additionalImageTags: $(Build.BuildId)
 
      - task: DockerCompose@0
-       displayName: Run Tests
+       displayName: open browser instances
        inputs:
          containerregistrytype: 'Container Registry'
          dockerRegistryEndpoint: Dockerhub
          dockerComposeFile: '**/docker-compose.yml'
          action: 'Run a Docker Compose command'
-         dockerComposeCommand: 'up'
+         dockerComposeCommand: 'up -d'
          detached: true
 
      - task: Maven@3
