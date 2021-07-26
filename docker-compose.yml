@@ -1,9 +1,9 @@
 # To execute this docker-compose yml file use `docker-compose -f <file_name> up`
 # Add the `-d` flag at the end for detached execution
 #commands:
-# docker-compose -f /Users/amit/Desktop/amit/projects/cucumber-java-testNG-api-ui-tests/src/test/resources/docker-compose.yml  up  
-#docker-compose -f /Users/amit/Desktop/amit/projects/cucumber-java-testNG-api-ui-tests/src/test/resources/docker-compose.yml  down
-#docker-compose -f /Users/amit/Desktop/amit/projects/cucumber-java-testNG-api-ui-tests/src/test/resources/docker-compose.yml  up --scale firefox=5
+# docker-compose -f /Users/amit/Desktop/amit/projects/cucumber-java-testNG-api-ui-tests/docker-compose.yml  up  
+#docker-compose -f /Users/amit/Desktop/amit/projects/cucumber-java-testNG-api-ui-tests/docker-compose.yml  down
+#docker-compose -f /Users/amit/Desktop/amit/projects/cucumber-java-testNG-api-ui-tests/docker-compose.yml  up --scale firefox=5
 
 version: "3"
 services:

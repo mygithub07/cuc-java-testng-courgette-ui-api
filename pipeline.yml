@@ -12,35 +12,7 @@ stages:
      displayName: Build and Push
      pool:
         vmImage: 'ubuntu-latest'
-     #variables:
-       #azureSubscriptionEndpoint: 'serviceConnection07'
      steps:
-     #- task: DockerCompose@0
-      # displayName: Container registry login
-     #  inputs:
-      #   containerregistrytype: Container Registry
-      #   dockerRegistryEndpoint: Dockerhub           
-         
-     #- task: DockerCompose@0
-     #  displayName: Build services
-      # inputs:
-      #   action: Build services
-      #   azureSubscriptionEndpoint: serviceConnection07
-      #   dockerComposeFile: docker-compose.yml
-      #   projectName: $(Build.Repository.Name)
-      #   qualifyImageNames: true
-      #   additionalImageTags: $(Build.BuildId)
-               
-     #- task: DockerCompose@0
-      # displayName: Push services
-      # inputs:
-      #   action: Push services
-       #  azureSubscriptionEndpoint: serviceConnection07
-      #   dockerComposeFile: docker-compose.yml
-       #  projectName: $(Build.Repository.Name)
-       #  qualifyImageNames: true
-       #  additionalImageTags: $(Build.BuildId)
-
      - task: DockerCompose@0
        displayName: open browser instances
        inputs:
@@ -55,9 +27,13 @@ stages:
        inputs:
          mavenPomFile: 'pom.xml'
          mavenOptions: '-Xmx3072m'
-         #javaHomeOption: 'JDKVersion'
-         #jdkVersionOption: '1.11'
          jdkArchitectureOption: 'x64'
          publishJUnitResults: true
          testResultsFiles: '**/target/cucumber.html'
          goals: 'clean verify -P acceptanceTests -e -X'
+         
+     - task: PublishPipelineArtifact@1
+         displayName: Publish cucumber report
+         inputs:
+           pathToPublish: $(System.DefaultWorkingDirectory)/s/target/cucumber-report/
+           artifactName: 'cucumber.html'
