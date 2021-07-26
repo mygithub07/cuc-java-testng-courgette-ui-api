@@ -13,7 +13,7 @@ stages:
      pool:
         vmImage: 'ubuntu-latest'
      variables:
-       azureSubscriptionEndpoint: Azure subscription 1
+       azureSubscriptionEndpoint: serviceConnection07
      steps:
      - task: DockerCompose@0
        displayName: Container registry login
