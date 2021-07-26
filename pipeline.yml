@@ -50,3 +50,14 @@ stages:
          action: 'Run a Docker Compose command'
          dockerComposeCommand: 'up'
          detached: false
+
+     - task: Maven@3
+       inputs:
+         mavenPomFile: 'pom.xml'
+         mavenOptions: '-Xmx3072m'
+         #javaHomeOption: 'JDKVersion'
+         #jdkVersionOption: '1.11'
+         jdkArchitectureOption: 'x64'
+         publishJUnitResults: true
+         testResultsFiles: '**/target/cucumber.html'
+         goals: 'clean verify -P acceptanceTests -e -X'
