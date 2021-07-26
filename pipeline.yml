@@ -49,7 +49,7 @@ stages:
          dockerComposeFile: '**/docker-compose.yml'
          action: 'Run a Docker Compose command'
          dockerComposeCommand: 'up'
-         detached: false
+         detached: true
 
      - task: Maven@3
        inputs:
