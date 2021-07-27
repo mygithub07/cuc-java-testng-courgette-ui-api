@@ -37,3 +37,8 @@ stages:
        inputs:
          pathToPublish: $(System.DefaultWorkingDirectory)/s/target/cucumber-report/
          artifactName: 'cucumber.html'
+
+     - task: PublishCucumberReport@1
+       inputs:
+         jsonDir: ./target/cucumber-report/
+         outputPath: ./target/
