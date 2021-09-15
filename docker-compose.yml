@@ -4,7 +4,7 @@
 # docker-compose -f /Users/amit/Desktop/amit/projects/cucumber-java-testNG-api-ui-tests/docker-compose.yml  up  
 #docker-compose -f /Users/amit/Desktop/amit/projects/cucumber-java-testNG-api-ui-tests/docker-compose.yml  down
 #docker-compose -f /Users/amit/Desktop/amit/projects/cucumber-java-testNG-api-ui-tests/docker-compose.yml  up --scale firefox=5
-
+#http://localhost:65299/grid/console
 version: "3"
 services:
   selenium-hub:
