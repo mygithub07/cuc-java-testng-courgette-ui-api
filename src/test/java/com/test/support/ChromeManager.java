@@ -12,24 +12,21 @@ public class ChromeManager extends DriverManager {
 
      protected WebDriver driver;
 
-
+//to use chrome by opening grid through pom , add below to pom.xml
+// <argument>-Dwebdriver.gecko.driver=${project.basedir}/src/test/resources/geckodriver</argument> 
+//also uncomment // return (RemoteWebDriver) (driver = new RemoteWebDriver(new URL(hubURL), capabilities));
+    
        //  @Override
          protected RemoteWebDriver createDriver() throws MalformedURLException {
-        /*
-                     String driverPath = "src/test/resources/drivers/chromedriver";
-                     if (System.getProperty("os.name").contains("Windows")) {
-                         driverPath += ".exe";
-                    }
-                    */
-          //  System.setProperty("webdriver.chrome.driver", "/Users/amit/Desktop/amit/projects/misc/chromedriver");
+       
+        String hubURL = "http://192.168.1.3:"+System.getProperty("hub.port")+"/wd/hub";
              ChromeOptions options = new ChromeOptions();
             //options.addArguments("--start-maximized");
-             
              DesiredCapabilities capabilities = DesiredCapabilities.chrome();
              capabilities.setCapability(ChromeOptions.CAPABILITY, options);
             return (RemoteWebDriver) (driver = new RemoteWebDriver(new URL("http://localhost:65299/wd/hub"), capabilities));
-           
-             //       return driver = new ChromeDriver(ChromeDriverService.createDefaultService());
+            // return (RemoteWebDriver) (driver = new RemoteWebDriver(new URL(hubURL), capabilities));
+             //  return driver = new ChromeDriver(ChromeDriverService.createDefaultService());
         }
 
         @Override

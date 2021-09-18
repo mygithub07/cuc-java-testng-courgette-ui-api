@@ -27,7 +27,7 @@ import java.net.MalformedURLException;
        
       public Global() throws MalformedURLException, IOException {
             driver = new DriverFactory().getManager();
-            // jsExecutor = (JavascriptExecutor) driver;
+             jsExecutor = (JavascriptExecutor) driver;
             wait = new WebDriverWait(driver, 3000);
             PageFactory.initElements(driver, PageObjects.class );
               help = new Helpers();

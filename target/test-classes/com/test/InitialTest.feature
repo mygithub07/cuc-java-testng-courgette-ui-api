@@ -5,18 +5,38 @@ Feature: UI Tests
   #wait = new WebDriverWait(driver, 3000);
   #PageFactory.initElements(driver, PageObjects.class );
 
+  Scenario Outline:  login registration 
+      
+      Given I open the site "https://www.way2automation.com/angularjs-protractor/registeration/#/login"
+       When I submit login details <Username> <Password> <UsernameDesc>
+      
+        Examples:
+        |Username|Password|UsernameDesc|
+        |"angular" |"password"|"testuserName"|
+        |"angular" |"password"|"testuserName2"|
+ 
+  #  Scenario Outline: submit registration
+      
+    #  Given I open the site "https://www.way2automation.com/way2auto_jquery/index.php"
+    #   When I submit registration with the following information <Name> <Phone> <Email> <Country> <City> <Username> <Password>
+      
+     #   Examples:
+     #   |Name|Phone|Email|Country|City|Username|Password|
+     #   |"TestFirstName TestLastName" |"123-456-7890"| "testuser1@testcompany.com"|"United States"|"testCity"|"testusername1"|"password123"|
+   
+  
  # @Scenario: example
    # Given I log something
     
-    Scenario Outline: Add a user and validate the user has been added to the table
+  #  Scenario Outline: Add a user and validate the user has been added to the table
       
-      Given I open the site "http://www.way2automation.com/angularjs-protractor/webtables/"
-        When I add  user with the following information <FirstName> <LastName> <username> <password> <Email> <CellPhone>
+     # Given I open the site "http://www.way2automation.com/angularjs-protractor/webtables/"
+     #   When I add  user with the following information <FirstName> <LastName> <username> <password> <Email> <CellPhone>
       
-        Examples:
-        |FirstName|LastName|username| password|Email|CellPhone|
-        |"TestFirstName" |"TestLastName" | "testusername"  |"test12345"|"testuser@testcompany.com"|"123-456-7890"|
-        |"TestFirstName1" |"TestLastName1" | "testusername1"  |"test123456"|"testuser1@testcompany.com"|"123-456-1000"|
+     #   Examples:
+     #   |FirstName|LastName|username| password|Email|CellPhone|
+     #  |"TestFirstName" |"TestLastName" | "testusername"  |"test12345"|"testuser@testcompany.com"|"123-456-7890"|
+     #   |"TestFirstName1" |"TestLastName1" | "testusername1"  |"test123456"|"testuser1@testcompany.com"|"123-456-1000"|
 
   #   Scenario: Add a user using pojo class in a scenario using data table and @DataTableType
   #    Given I open the site "http://www.way2automation.com/angularjs-protractor/webtables/"

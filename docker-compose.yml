@@ -20,7 +20,9 @@ services:
     environment:
       - HUB_HOST=selenium-hub
       - HUB_PORT=4444
-
+    deploy:
+      mode: replicated
+      replicas: 4
 
   firefox:
     image: selenium/node-firefox:3.141.59-20210607
@@ -31,4 +33,4 @@ services:
       - HUB_PORT=4444
     deploy:
       mode: replicated
-      replicas: 7
+      replicas: 2

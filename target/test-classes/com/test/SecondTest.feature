@@ -1,29 +1,29 @@
 Feature: second feature test
-#  @get
+ # @get
  #Scenario: get employee
     
  #   Given an employee exist in the database with id "2"
  #  When  user retrieves employee info by id
- #   Then the status code for get employee is 200
+  #  Then the status code for get employee is 200
  #   And response includes the following employee info
  #    | status				| success	     |
  #	| data.employee_name 	| Garrett Winters|
- #   | data.id		        | 2         	 |
- #   | data.employee_age     | 63        	 |
+  #  | data.id		        | 2         	 |
+  #  | data.employee_age     | 63        	 |
  
  # @post
 #Scenario: post employee
 #	Given an employee record is created with values
-   #    | employee_name 	| Test Name1|
-   #    | age		    | 41       |
-    #   | salary		    | 320000    |
+ #      | employee_name 	| Test Name1|
+  #    | age		    | 41       |
+ #     | salary		    | 320000    |
   
-  # @post
+ #  @post
  #Scenario: post another employee
-#	Given an employee record is created with other values
-#	  | employee_name 	| Test Name2|
- #     | age		    | 50       |
-  #     | salary		    | 500000   |
+	#Given an employee record is created with other values
+	#  | employee_name 	| Test Name2|
+    #  | age		    | 50       |
+    #   | salary		    | 500000   |
   
  #@adhoctest
  # Scenario: retry failing test

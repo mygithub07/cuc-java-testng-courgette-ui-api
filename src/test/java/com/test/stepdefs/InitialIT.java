@@ -52,7 +52,52 @@ public class InitialIT  {
                 global.driver.manage().window().maximize();
  
        }
+       
+        @When("I submit login details {string} {string} {string}")
+        public void submitRegistration(String usrname, String pwd, String desc) throws MalformedURLException, InterruptedException {
+            global.wait.until(ExpectedConditions.visibilityOf(PageObjects.loginscope));
+             PageObjects.usrname.sendKeys(usrname);
+             Thread.sleep(1000);
+             PageObjects.passwd.sendKeys(pwd);
+              Thread.sleep(1000);
+              PageObjects.unamedesc.sendKeys(desc);
+              Thread.sleep(1000);
+             
+             PageObjects.loginbutton.click();
+              Thread.sleep(1000);
+               global.wait.until(ExpectedConditions.visibilityOf(PageObjects.loginconfirmmessage));
+             
+        }
+        @When("I submit registration with the following information {string} {string} {string} {string} {string} {string} {string}")
+        public void submitRegistration(String nm,String ph,String em,String ctry, String city, String usrname, String pwd) throws MalformedURLException, InterruptedException {
+ 
+          global.wait.until(ExpectedConditions.visibilityOf(PageObjects.regform));
 
+                PageObjects.Name.sendKeys(nm);
+                Thread.sleep(1000);
+                PageObjects.tel.sendKeys(ph);
+                 Thread.sleep(1000);
+                 PageObjects.eml.sendKeys(em);
+                 Thread.sleep(1000);
+                 PageObjects.country.click();
+                 Thread.sleep(1000);
+                 PageObjects.us.click();
+                 Thread.sleep(1000);
+                 PageObjects.city.sendKeys(city);
+                 Thread.sleep(1000);
+                 global.wait.until(ExpectedConditions.elementToBeClickable(PageObjects.uname));
+                // global.jsExecutor.executeScript("arguments[0].sendKeys(arguments[1]);", PageObjects.uname,usrname);
+                 PageObjects.uname.sendKeys(usrname);
+            
+                 Thread.sleep(1000);
+                  global.wait.until(ExpectedConditions.elementToBeClickable(PageObjects.pwd));
+                 PageObjects.pwd.sendKeys(pwd);
+                 Thread.sleep(1000);
+                 PageObjects.submit.click();
+                 Thread.sleep(1000);
+                 global.wait.until(ExpectedConditions.visibilityOf(PageObjects.submitText));
+            }
+            
        @When("I add  user with the following information {string} {string} {string} {string} {string} {string}")
         public void AddUser(String fn,String ln,String uname,String pwd, String em, String cellphone) throws MalformedURLException, InterruptedException {
               

@@ -9,7 +9,7 @@ import java.net.MalformedURLException;
 public class DriverFactory {
         public RemoteWebDriver getManager() throws MalformedURLException , IOException {
 
-           // return new ChromeManager().getDriver();
-            return new FirefoxManager().getDriver();
+            return new ChromeManager().getDriver();
+          //  return new FirefoxManager().getDriver();
         }
 }

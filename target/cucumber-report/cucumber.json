@@ -1,0 +1,179 @@
+[ {
+  "line" : 1,
+  "elements" : [ {
+    "start_timestamp" : "2021-09-18T21:25:35.374Z",
+    "line" : 15,
+    "name" : "login registration",
+    "description" : "",
+    "id" : "ui-tests;login-registration;;2",
+    "after" : [ {
+      "result" : {
+        "duration" : 137977000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.InitialIT.closeBrowser()"
+      }
+    }, {
+      "result" : {
+        "duration" : 1885000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.RestAssuredIT.afterEverything()"
+      }
+    } ],
+    "type" : "scenario",
+    "keyword" : "Scenario Outline",
+    "steps" : [ {
+      "result" : {
+        "duration" : 14402550000,
+        "status" : "passed"
+      },
+      "line" : 10,
+      "name" : "I open the site \"https://www.way2automation.com/angularjs-protractor/registeration/#/login\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"https://www.way2automation.com/angularjs-protractor/registeration/#/login\"",
+          "offset" : 16
+        } ],
+        "location" : "com.test.stepdefs.InitialIT.OpenSite(java.lang.String)"
+      },
+      "after" : [ {
+        "result" : {
+          "duration" : 20547000,
+          "status" : "passed"
+        },
+        "match" : {
+          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+        }
+      } ],
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 9100946000,
+        "status" : "passed"
+      },
+      "line" : 11,
+      "name" : "I submit login details \"angular\" \"password\" \"testuserName\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"angular\"",
+          "offset" : 23
+        }, {
+          "val" : "\"password\"",
+          "offset" : 33
+        }, {
+          "val" : "\"testuserName\"",
+          "offset" : 44
+        } ],
+        "location" : "com.test.stepdefs.InitialIT.submitRegistration(java.lang.String,java.lang.String,java.lang.String)"
+      },
+      "after" : [ {
+        "result" : {
+          "duration" : 1613000,
+          "status" : "passed"
+        },
+        "match" : {
+          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+        }
+      } ],
+      "keyword" : "When "
+    } ]
+  } ],
+  "name" : "UI Tests",
+  "description" : "",
+  "id" : "ui-tests",
+  "keyword" : "Feature",
+  "uri" : "file:src/test/resources/com/test/InitialTest.feature",
+  "tags" : [ ]
+} , {
+  "line" : 1,
+  "elements" : [ {
+    "start_timestamp" : "2021-09-18T21:25:35.359Z",
+    "line" : 16,
+    "name" : "login registration",
+    "description" : "",
+    "id" : "ui-tests;login-registration;;3",
+    "after" : [ {
+      "result" : {
+        "duration" : 299757000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.InitialIT.closeBrowser()"
+      }
+    }, {
+      "result" : {
+        "duration" : 1446000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.RestAssuredIT.afterEverything()"
+      }
+    } ],
+    "type" : "scenario",
+    "keyword" : "Scenario Outline",
+    "steps" : [ {
+      "result" : {
+        "duration" : 14437721000,
+        "status" : "passed"
+      },
+      "line" : 10,
+      "name" : "I open the site \"https://www.way2automation.com/angularjs-protractor/registeration/#/login\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"https://www.way2automation.com/angularjs-protractor/registeration/#/login\"",
+          "offset" : 16
+        } ],
+        "location" : "com.test.stepdefs.InitialIT.OpenSite(java.lang.String)"
+      },
+      "after" : [ {
+        "result" : {
+          "duration" : 18749000,
+          "status" : "passed"
+        },
+        "match" : {
+          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+        }
+      } ],
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 9173350000,
+        "status" : "passed"
+      },
+      "line" : 11,
+      "name" : "I submit login details \"angular\" \"password\" \"testuserName2\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"angular\"",
+          "offset" : 23
+        }, {
+          "val" : "\"password\"",
+          "offset" : 33
+        }, {
+          "val" : "\"testuserName2\"",
+          "offset" : 44
+        } ],
+        "location" : "com.test.stepdefs.InitialIT.submitRegistration(java.lang.String,java.lang.String,java.lang.String)"
+      },
+      "after" : [ {
+        "result" : {
+          "duration" : 530000,
+          "status" : "passed"
+        },
+        "match" : {
+          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+        }
+      } ],
+      "keyword" : "When "
+    } ]
+  } ],
+  "name" : "UI Tests",
+  "description" : "",
+  "id" : "ui-tests",
+  "keyword" : "Feature",
+  "uri" : "file:src/test/resources/com/test/InitialTest.feature",
+  "tags" : [ ]
+} ]
