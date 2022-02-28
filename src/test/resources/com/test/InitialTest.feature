@@ -4,45 +4,50 @@ Feature: UI Tests
   #driver = new DriverFactory().getManager();
   #wait = new WebDriverWait(driver, 3000);
   #PageFactory.initElements(driver, PageObjects.class );
-
+#http://localhost:65299/grid/console#
+  
+ @firefox 
   Scenario Outline:  login registration 
       
       Given I open the site "https://www.way2automation.com/angularjs-protractor/registeration/#/login"
-       When I submit login details <Username> <Password> <UsernameDesc>
+      When I submit login details <Username> <Password> <UsernameDesc>
       
-        Examples:
+       Examples:
         |Username|Password|UsernameDesc|
-        |"angular" |"password"|"testuserName"|
+      |"angular" |"password"|"testuserName"|
         |"angular" |"password"|"testuserName2"|
+        |"angular" |"password"|"testuserName3"|
  
-  #  Scenario Outline: submit registration
+   #@uitestsGroup2
+   #Scenario Outline: submit registration
       
-    #  Given I open the site "https://www.way2automation.com/way2auto_jquery/index.php"
-    #   When I submit registration with the following information <Name> <Phone> <Email> <Country> <City> <Username> <Password>
+     # Given I open the site "https://www.way2automation.com/way2auto_jquery/index.php"
+     # When I submit registration with the following information <Name> <Phone> <Email> <Country> <City> <Username> <Password>
       
-     #   Examples:
+    #    Examples:
      #   |Name|Phone|Email|Country|City|Username|Password|
      #   |"TestFirstName TestLastName" |"123-456-7890"| "testuser1@testcompany.com"|"United States"|"testCity"|"testusername1"|"password123"|
-   
   
- # @Scenario: example
-   # Given I log something
+ #@Scenario: example
+  # Given I log something
+   
+  @chrome
+    Scenario Outline: Add a user and validate the user has been added to the table
+      
+     Given I open the site "http://www.way2automation.com/angularjs-protractor/webtables/"
+        When I add  user with the following information <FirstName> <LastName> <username> <password> <Email> <CellPhone>
+      
+        Examples:
+        |FirstName|LastName|username| password|Email|CellPhone|
+       |"TestFirstName" |"TestLastName" | "testusername"  |"test12345"|"testuser@testcompany.com"|"123-456-7890"|
+        |"TestFirstName1" |"TestLastName1" | "testusername1"  |"test123456"|"testuser1@testcompany.com"|"123-456-1000"|
     
-  #  Scenario Outline: Add a user and validate the user has been added to the table
-      
-     # Given I open the site "http://www.way2automation.com/angularjs-protractor/webtables/"
-     #   When I add  user with the following information <FirstName> <LastName> <username> <password> <Email> <CellPhone>
-      
-     #   Examples:
-     #   |FirstName|LastName|username| password|Email|CellPhone|
-     #  |"TestFirstName" |"TestLastName" | "testusername"  |"test12345"|"testuser@testcompany.com"|"123-456-7890"|
-     #   |"TestFirstName1" |"TestLastName1" | "testusername1"  |"test123456"|"testuser1@testcompany.com"|"123-456-1000"|
-
-  #   Scenario: Add a user using pojo class in a scenario using data table and @DataTableType
+  # @firefox 
+   #  Scenario: Add a user using pojo class in a scenario using data table and @DataTableType
   #    Given I open the site "http://www.way2automation.com/angularjs-protractor/webtables/"
-  #     When I add  user with passing info to pojo class
-  #      |FirstName|LastName|username| password|Email|CellPhone|
-   #     |TestFirstName3 |TestLastName3 | testusername3  |test67890|testuser3@testcompany3.com|456-789-1122|
+   #    When I add  user with passing info to pojo class
+   #    |FirstName|LastName|username| password|Email|CellPhone|
+    #    |TestFirstName3 |TestLastName3 | testusername3  |test67890|testuser3@testcompany3.com|456-789-1122|
       
  # Scenario Outline: Add a user using pojo class in scenario outline using @ParameterType
    

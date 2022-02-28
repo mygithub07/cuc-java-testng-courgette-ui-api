@@ -5,6 +5,8 @@
 #docker-compose -f /Users/amit/Desktop/amit/projects/cucumber-java-testNG-api-ui-tests/docker-compose.yml  down
 #docker-compose -f /Users/amit/Desktop/amit/projects/cucumber-java-testNG-api-ui-tests/docker-compose.yml  up --scale firefox=5
 #http://localhost:65299/grid/console
+#https://www.linkedin.com/pulse/part-5-hands-on-test-automation-project-java-spring-reis-fernandes/
+
 version: "3"
 services:
   selenium-hub:
@@ -33,4 +35,4 @@ services:
       - HUB_PORT=4444
     deploy:
       mode: replicated
-      replicas: 2
+      replicas: 4

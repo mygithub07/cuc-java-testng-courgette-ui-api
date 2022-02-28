@@ -5,9 +5,7 @@ import com.google.inject.Inject;
 import com.test.support.Global;
 import com.test.support.Helpers;
 import com.test.support.addUserPojo;
-import io.cucumber.java.After;
-import io.cucumber.java.DataTableType;
-import io.cucumber.java.ParameterType;
+import io.cucumber.java.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -18,8 +16,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
@@ -39,13 +39,27 @@ public class InitialIT  {
          @Inject
        Global global;
 
-        @Given("I log something")
+    
+      @Before
+        public void getScenarioTags(Scenario scenario) {
+        
+          for(String tag : scenario.getSourceTagNames()){
+            System.out.print("Tag: " + tag);
+            if (tag.equals("@uitests")){
+               System.out.println("*****uitests triggered*****");
+                }
+             }
+         }
+         
+    public InitialIT() throws IOException {
+    }
+
+    @Given("I log something")
         public void logSomething( )   {
         System.out.println("sample text");
        }
         
- 
-
+       
         @Given("I open the site {string}")
         public void OpenSite(String site) throws MalformedURLException, InterruptedException {
                 global.driver.get(site);

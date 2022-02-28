@@ -16,14 +16,13 @@ import io.cucumber.java.en.And;
 //import io.github.artsok.RepeatedIfExceptionsTest;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
-
+import com.test.support.TestSingleton;
 
 
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 
-import org.junit.Assert;
 //import static org.junit.jupiter.api.Assertions.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -35,7 +34,6 @@ import org.json.*;
 //import me.jaksa.Unreliable;
 //import static me.jaksa.Unreliable.retryOn;
 
-
 public class secondIT {
     
     public static Response response;
@@ -44,9 +42,29 @@ public class secondIT {
 	public  static String id;
 	 public static JsonPath jsonPathEvaluator;
 	//Unreliable ur = new Unreliable();
+	//public com.test.support.TestSingleton singleton;
 	
    @Inject
    Global global;
+   
+   public static String getVar;
+  public static TestSingleton singleton ;
+  
+    @Given("a context is retrieved")
+      public void retrieveContext()  {
+    	  singleton =  TestSingleton.getInstance();
+    	 System.out.println("class of singleton in retrieve context...." + singleton);
+          System.out.println("testVariable from transformation test step..."+ singleton.GetTestVar());
+ 
+    }
+   
+   @Given("testVar from transformation test")
+      public void printTestVarFromDiffFeature()  {
+   	      // System.out.println("testVariable from transformation test step..."+ global.help.GetTestVar());
+	     singleton =  TestSingleton.getInstance();
+    	 System.out.println("class of singleton in printTestVarFromDiffFeature...." + singleton);
+    	 System.out.println("testVariable from transformation test step..."+ singleton.GetTestVar());
+	   }
    
 	@Given("an employee exist in the database with id {string}")
 	public void an_employee_exists_with_id(String ID){
@@ -168,6 +186,7 @@ JsonObject jsonObj = element.getAsJsonObject();
 	            assertThatJson(postResponse.getBody().prettyPrint())
 					  .inPath("$.message").isEqualTo("Successfully! Record has been added.");
 	            
+	            
 	 }
 	 
 	@Given("test fails because we want to test that way")
@@ -185,12 +204,12 @@ JsonObject jsonObj = element.getAsJsonObject();
         public void logSomething(String teststr )   {
             System.out.println("sample text:"+ teststr+"somethingtoIdentifySpace");
        }
-       
+       /*
          @And("perform guice test" )
                  public void guiceTest(){
                System.out.println(global.help.guiceTest());
                  }
-
+       */
 
 	 
 }

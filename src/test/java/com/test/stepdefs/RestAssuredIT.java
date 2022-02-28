@@ -85,8 +85,8 @@ public class RestAssuredIT {
 		System.out.println("***after every step****");
 	}
 	
-	@After
-    public void afterEverything(){
-		System.out.println("***after everything****");
-	}
+	//@After
+    //public void afterEverything(){
+	//	System.out.println("***after everything****");
+	//}
 }

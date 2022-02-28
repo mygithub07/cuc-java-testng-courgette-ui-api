@@ -207,7 +207,7 @@
                     <phase>pre-integration-test</phase>
                     <configuration>
                         <target>
-                            <sleep seconds="10" />
+                            <sleep seconds="2" />
                         </target>
                     </configuration>
                     <goals>
@@ -216,7 +216,8 @@
                 </execution>
             </executions>
    </plugin>
-  <!--          
+            
+<!--
   <plugin>
                <groupId>org.codehaus.mojo</groupId>
                <artifactId>exec-maven-plugin</artifactId>
@@ -269,12 +270,12 @@
                         <argument>-browser</argument>
                         <argument>browserName=chrome,maxInstances=4,platform=ANY</argument>
                         <argument>-hub</argument>
-                        <argument> http://192.168.1.3:${hub.p}/grid/register</argument>
+                        <argument> http://192.168.1.10:${hub.p}/grid/register</argument>
                     
                       </arguments>
              </configuration>
     </plugin>
-  -->      
+  -->
             <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-failsafe-plugin</artifactId>

@@ -10,6 +10,5 @@ public abstract class DriverManager {
                 // Abstract class to be implemented for each
                // browser according to each one's settings
                 protected abstract RemoteWebDriver createDriver() throws MalformedURLException, IOException;
-
                 public abstract RemoteWebDriver getDriver() throws MalformedURLException, IOException;
 }

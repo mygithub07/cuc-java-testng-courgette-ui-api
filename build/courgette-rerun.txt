@@ -1,1 +1,3 @@
-file:src/test/resources/com/test/InitialTest.feature:15
+file:src/test/resources/com/test/InitialTest.feature:17
+file:src/test/resources/com/test/InitialTest.feature:18
+file:src/test/resources/com/test/InitialTest.feature:19

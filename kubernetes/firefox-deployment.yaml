@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: firefox
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: selenium-node-ff
+  strategy: {}
+  template:
+    metadata:
+      name: selenium-node-ff
+      labels:
+        app: selenium-node-ff
+    spec:
+      containers:
+        - name: selenium-node-ff
+          image: selenium/node-firefox:3.141.59-20210607
+          ports:
+            - containerPort: 5901
+          env:
+            - name: HUB_HOST
+              value: "selenium-srv"
+            - name: HUB_PORT
+              value: "4444"
+          resources: {}
+      restartPolicy: Always
+status: {}

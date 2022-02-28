@@ -13,7 +13,8 @@ import java.util.Set;
 public class Helpers     {
 
         public  WebDriverWait wait;
-
+        public String testVar;
+        
          private final Logger logger = LoggerFactory.getLogger(Helpers.class);
 
          public List<WebElement> List1;
@@ -42,6 +43,13 @@ public class Helpers     {
         }
          public  String guiceTest(){
           return ("guice test");
+          
+         }
+           public  void SetTestVar(String s){
+            this.testVar = s;
+         }
+         public  String GetTestVar(){
+          return this.testVar;
           
          }
 }

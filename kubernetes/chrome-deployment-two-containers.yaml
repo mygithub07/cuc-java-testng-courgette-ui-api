@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chrome-two-containers
+spec:
+
+  selector:
+    matchLabels:
+      app: selenium-node-chrome-two-containers
+  strategy: {}
+  template:
+    metadata:
+      name: selenium-node-chrome-two-containers
+      labels:
+        app: selenium-node-chrome-two-containers
+    spec:
+      containers:
+      - name: selenium-node-chrome-1
+        image: selenium/node-chrome:3.141.59-20210607
+        volumeMounts:
+        - name: shared-data
+          mountPath: /usr/share/ctr/
+        ports:
+         - containerPort: 5900
+        env:
+         - name: HUB_HOST
+           value: "selenium-srv"
+         - name: HUB_PORT
+           value: "4444"
+
+      - name: selenium-node-chrome-2
+        image: selenium/node-chrome:3.141.59-20210607
+        volumeMounts:
+        - name: shared-data
+          mountPath: /usr/share/ctr/
+        ports:
+         - containerPort: 5900
+        env:
+         - name: HUB_HOST
+           value: "selenium-srv"
+         - name: HUB_PORT
+           value: "4444"

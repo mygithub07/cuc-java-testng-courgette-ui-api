@@ -55,8 +55,12 @@ public class AcceptanceIT extends AbstractTestNGCucumberTests {
         environmentInfo = "browser=chrome; git_branch=master",
         cucumberOptions = @CucumberOptions(
                 features = "src/test/resources/com/test/",
+                //features={"src/test/resources/com/test/TransformationTests.feature", "src/test/resources/com/test/SecondTest.feature"},
                 glue = "com.test.stepdefs",
                 //tags = {"@post or @get"},
+                tags = {"@firefox or @chrome"},
+                //tags = {"@transformation"},
+               // tags = {"@adhoc"},
                 publish = true,
                 plugin = {
                         "pretty",
