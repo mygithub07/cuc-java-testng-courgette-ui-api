@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 202.279 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 273.375 s <<< FAILURE! - in TestSuite
+com.test.AcceptanceIT.parallelRun  Time elapsed: 272.373 s  <<< FAILURE!
+courgette.runtime.CourgetteTestFailureException: There were failing tests. Refer to the Courgette html report for more details.
+

@@ -4,8 +4,8 @@ Feature: transformation test
    # Given a context is set
    # Given a context is retrieved
     
-@firefox
- Scenario: transformation tests
+#@firefox
+ #Scenario: transformation tests
     
   # Given name has its value xyz
    #And isMajor has a value false
