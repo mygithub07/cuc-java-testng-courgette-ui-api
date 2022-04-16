@@ -38,6 +38,14 @@ stages:
          pathToPublish: $(System.DefaultWorkingDirectory)/s/target/cucumber-report/
          artifactName: 'cucumber.html'
 
+     - task: PublishTestResults@2
+       inputs:
+         testResultsFormat: 'JUnit'
+         searchFolder: '$(System.DefaultWorkingDirectory)'
+         publishJUnitResults: true
+         testResultsFiles: '**/target/cucumber.xml'
+         
+         
      - task: PublishCucumberReport@1
        inputs:
          jsonDir: ./target/cucumber-report/
