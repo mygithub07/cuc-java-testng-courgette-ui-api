@@ -49,7 +49,7 @@ stages:
          testResultsFormat: 'JUnit'
          searchFolder: '$(System.DefaultWorkingDirectory)'
          publishJUnitResults: true
-         testResultsFiles: '**/target/cucumber.xml'
+         testResultsFiles: '**/target/cucumber-report/cucumber.xml'
          
          
      - task: PublishCucumberReport@1
