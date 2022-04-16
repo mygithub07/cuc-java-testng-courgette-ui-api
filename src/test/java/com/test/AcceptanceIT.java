@@ -65,7 +65,8 @@ public class AcceptanceIT extends AbstractTestNGCucumberTests {
                 plugin = {
                         "pretty",
                         "json:target/cucumber-report/cucumber.json",
-                        "html:target/cucumber-report/cucumber.html"}
+                        "html:target/cucumber-report/cucumber.html",
+                        "junit:target/cucumber-report/cucumber.xml"}
         ))
 class AcceptanceIT extends TestNGCourgette {
 }

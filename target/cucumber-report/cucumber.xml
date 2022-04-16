@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="Test Suite" skipped="0" tests="5" time="448.999">
+
+<testcase classname="UI Tests" name="login registration" time="91.303">
+            
+    <system-out>
+                    
+        <![CDATA[Given I open the site "https://www.way2automation.com/angularjs-protractor/registeration/#/login".passed
+When I submit login details "angular" "password" "testuserName2"............passed
+]]>
+                
+    </system-out>
+        
+</testcase>
+
+<testcase classname="UI Tests" name="Add a user and validate the user has been added to the table" time="79.014">
+            
+    <system-out>
+                    
+        <![CDATA[Given I open the site "http://www.way2automation.com/angularjs-protractor/webtables/".passed
+When I add  user with the following information "TestFirstName1" "TestLastName1" "testusername1" "test123456" "testuser1@testcompany.com" "123-456-1000".passed
+]]>
+                
+    </system-out>
+        
+</testcase>
+
+<testcase classname="UI Tests" name="Add a user and validate the user has been added to the table" time="79.21">
+            
+    <system-out>
+                    
+        <![CDATA[Given I open the site "http://www.way2automation.com/angularjs-protractor/webtables/".passed
+When I add  user with the following information "TestFirstName" "TestLastName" "testusername" "test12345" "testuser@testcompany.com" "123-456-7890".passed
+]]>
+                
+    </system-out>
+        
+</testcase>
+
+<testcase classname="UI Tests" name="login registration" time="92.657">
+            
+    <system-out>
+                    
+        <![CDATA[Given I open the site "https://www.way2automation.com/angularjs-protractor/registeration/#/login".passed
+When I submit login details "angular" "password" "testuserName3"............passed
+]]>
+                
+    </system-out>
+        
+</testcase>
+
+<testcase classname="UI Tests" name="login registration" time="90.483">
+            
+    <system-out>
+                    
+        <![CDATA[Given I open the site "https://www.way2automation.com/angularjs-protractor/registeration/#/login".passed
+When I submit login details "angular" "password" "testuserName".............passed
+]]>
+                
+    </system-out>
+        
+</testcase>
+
+</testsuite>

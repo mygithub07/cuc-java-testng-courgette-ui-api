@@ -1,10 +1,10 @@
 [ {
   "line" : 1,
   "elements" : [ {
-    "start_timestamp" : "2022-02-28T20:52:59.586Z",
+    "start_timestamp" : "2022-04-16T15:31:21.951Z",
     "before" : [ {
       "result" : {
-        "duration" : 726946000,
+        "duration" : 607792000,
         "status" : "passed"
       },
       "match" : {
@@ -12,125 +12,7 @@
       }
     }, {
       "result" : {
-        "duration" : 25272763000,
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "com.test.stepdefs.InitialIT.getScenarioTags(io.cucumber.java.Scenario)"
-      }
-    } ],
-    "line" : 42,
-    "name" : "Add a user and validate the user has been added to the table",
-    "description" : "",
-    "id" : "ui-tests;add-a-user-and-validate-the-user-has-been-added-to-the-table;;2",
-    "after" : [ {
-      "result" : {
-        "duration" : 1609790000,
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "com.test.stepdefs.InitialIT.closeBrowser()"
-      }
-    }, {
-      "result" : {
-        "duration" : 1767000,
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "com.test.stepdefs.TransformationTestsIT.getSingletonInstance()"
-      }
-    } ],
-    "type" : "scenario",
-    "keyword" : "Scenario Outline",
-    "steps" : [ {
-      "result" : {
-        "duration" : 52947741000,
-        "status" : "passed"
-      },
-      "line" : 37,
-      "name" : "I open the site \"http://www.way2automation.com/angularjs-protractor/webtables/\"",
-      "match" : {
-        "arguments" : [ {
-          "val" : "\"http://www.way2automation.com/angularjs-protractor/webtables/\"",
-          "offset" : 16
-        } ],
-        "location" : "com.test.stepdefs.InitialIT.OpenSite(java.lang.String)"
-      },
-      "after" : [ {
-        "result" : {
-          "duration" : 35392000,
-          "status" : "passed"
-        },
-        "match" : {
-          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
-        }
-      } ],
-      "keyword" : "Given "
-    }, {
-      "result" : {
-        "duration" : 153871072000,
-        "status" : "passed"
-      },
-      "line" : 38,
-      "name" : "I add  user with the following information \"TestFirstName\" \"TestLastName\" \"testusername\" \"test12345\" \"testuser@testcompany.com\" \"123-456-7890\"",
-      "match" : {
-        "arguments" : [ {
-          "val" : "\"TestFirstName\"",
-          "offset" : 43
-        }, {
-          "val" : "\"TestLastName\"",
-          "offset" : 59
-        }, {
-          "val" : "\"testusername\"",
-          "offset" : 74
-        }, {
-          "val" : "\"test12345\"",
-          "offset" : 89
-        }, {
-          "val" : "\"testuser@testcompany.com\"",
-          "offset" : 101
-        }, {
-          "val" : "\"123-456-7890\"",
-          "offset" : 128
-        } ],
-        "location" : "com.test.stepdefs.InitialIT.AddUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-      },
-      "after" : [ {
-        "result" : {
-          "duration" : 10090000,
-          "status" : "passed"
-        },
-        "match" : {
-          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
-        }
-      } ],
-      "keyword" : "When "
-    } ],
-    "tags" : [ {
-      "name" : "@chrome"
-    } ]
-  } ],
-  "name" : "UI Tests",
-  "description" : "",
-  "id" : "ui-tests",
-  "keyword" : "Feature",
-  "uri" : "file:src/test/resources/com/test/InitialTest.feature",
-  "tags" : [ ]
-} , {
-  "line" : 1,
-  "elements" : [ {
-    "start_timestamp" : "2022-02-28T20:53:00.037Z",
-    "before" : [ {
-      "result" : {
-        "duration" : 670224000,
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "com.test.stepdefs.DriverFactory.getScenarioTags(io.cucumber.java.Scenario)"
-      }
-    }, {
-      "result" : {
-        "duration" : 24458676000,
+        "duration" : 17823112000,
         "status" : "passed"
       },
       "match" : {
@@ -143,7 +25,7 @@
     "id" : "ui-tests;add-a-user-and-validate-the-user-has-been-added-to-the-table;;3",
     "after" : [ {
       "result" : {
-        "duration" : 1559370000,
+        "duration" : 716737000,
         "status" : "passed"
       },
       "match" : {
@@ -151,7 +33,7 @@
       }
     }, {
       "result" : {
-        "duration" : 4891000,
+        "duration" : 1179000,
         "status" : "passed"
       },
       "match" : {
@@ -162,7 +44,7 @@
     "keyword" : "Scenario Outline",
     "steps" : [ {
       "result" : {
-        "duration" : 52730807000,
+        "duration" : 13893629000,
         "status" : "passed"
       },
       "line" : 37,
@@ -176,7 +58,7 @@
       },
       "after" : [ {
         "result" : {
-          "duration" : 37084000,
+          "duration" : 27773000,
           "status" : "passed"
         },
         "match" : {
@@ -186,7 +68,7 @@
       "keyword" : "Given "
     }, {
       "result" : {
-        "duration" : 152455883000,
+        "duration" : 45445664000,
         "status" : "passed"
       },
       "line" : 38,
@@ -215,7 +97,7 @@
       },
       "after" : [ {
         "result" : {
-          "duration" : 11025000,
+          "duration" : 7000000,
           "status" : "passed"
         },
         "match" : {
@@ -237,10 +119,10 @@
 } , {
   "line" : 1,
   "elements" : [ {
-    "start_timestamp" : "2022-02-28T20:55:25.231Z",
+    "start_timestamp" : "2022-04-16T15:31:21.918Z",
     "before" : [ {
       "result" : {
-        "duration" : 690032000,
+        "duration" : 666509000,
         "status" : "passed"
       },
       "match" : {
@@ -248,119 +130,8 @@
       }
     }, {
       "result" : {
-        "error_message" : "com.google.inject.ProvisionException: Unable to provision, see the following errors:\n\n1) Error injecting constructor, org.openqa.selenium.TimeoutException: Connection refused (os error 111)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: '8f94520e60ba', ip: '172.18.0.8', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'\nDriver info: driver.version: unknown\nremote stacktrace: \nCommand duration or timeout: 64.14 seconds\n  at com.test.support.Global.<init>(Global.java:29)\n  at com.test.support.Global.class(Global.java:29)\n  while locating com.test.support.Global\n    for field at com.test.stepdefs.InitialIT.global(InitialIT.java:31)\n  while locating com.test.stepdefs.InitialIT\n\n1 error\n\tat com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:226)\n\tat com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1097)\n\tat com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1131)\n\tat io.cucumber.guice.GuiceFactory.getInstance(GuiceFactory.java:45)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\n\tat io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)\n\tat io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)\n\tat io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:98)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\n\tat io.cucumber.core.runtime.Runtime.lambda$execute$5(Runtime.java:110)\n\tat io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)\n\tat io.cucumber.core.runtime.Runtime.lambda$execute$6(Runtime.java:110)\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:233)\n\tat java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)\n\tat io.cucumber.core.runtime.Runtime.lambda$run$2(Runtime.java:86)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:199)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1598)\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)\n\tat io.cucumber.core.runtime.Runtime.run(Runtime.java:87)\n\tat io.cucumber.core.cli.Main.run(Main.java:92)\n\tat io.cucumber.core.cli.Main.main(Main.java:34)\nCaused by: org.openqa.selenium.TimeoutException: Connection refused (os error 111)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: '8f94520e60ba', ip: '172.18.0.8', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'\nDriver info: driver.version: unknown\nremote stacktrace: \nCommand duration or timeout: 64.14 seconds\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)\n\tat com.test.support.FirefoxManager.createDriver(FirefoxManager.java:45)\n\tat com.test.support.FirefoxManager.getDriver(FirefoxManager.java:52)\n\tat com.test.stepdefs.DriverFactory.getManager(DriverFactory.java:48)\n\tat com.test.support.Global.<init>(Global.java:30)\n\tat com.test.support.Global$$FastClassByGuice$$574697b1.newInstance(<generated>)\n\tat com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:89)\n\tat com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)\n\tat com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)\n\tat com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:306)\n\tat com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)\n\tat io.cucumber.guice.SequentialScenarioScope.lambda$scope$0(SequentialScenarioScope.java:40)\n\tat com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:39)\n\tat com.google.inject.internal.SingleFieldInjector.inject(SingleFieldInjector.java:52)\n\tat com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:147)\n\tat com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:124)\n\tat com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)\n\tat com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:306)\n\tat com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1094)\n\t... 32 more\nCaused by: org.openqa.selenium.TimeoutException: Connection refused (os error 111)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: '8f94520e60ba', ip: '172.18.0.8', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'\nDriver info: driver.version: unknown\nremote stacktrace: \nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'Amits-MacBook-Air.local', ip: 'fe80:0:0:0:c0b:b01f:aad3:ad0b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '13.0.2'\nDriver info: driver.version: unknown\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\n\tat org.openqa.selenium.grid.session.remote.RemoteSession$Factory.performHandshake(RemoteSession.java:147)\n\tat org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply(ServicedSession.java:161)\n\tat org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12(ActiveSessionFactory.java:180)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.ReferencePipeline$11$1.accept(ReferencePipeline.java:440)\n\tat java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)\n\tat org.openqa.selenium.remote.server.ActiveSessionFactory.apply(ActiveSessionFactory.java:183)\n\tat org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2(NewSessionPipeline.java:66)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)\n\tat java.util.Collections$2.tryAdvance(Collections.java:4719)\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)\n\tat org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3(NewSessionPipeline.java:69)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.DistinctOps$1$2.accept(DistinctOps.java:175)\n\tat java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)\n\tat java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Streams.java:405)\n\tat java.util.stream.Streams$ConcatSpliterator.tryAdvance(Streams.java:728)\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)\n\tat org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession(NewSessionPipeline.java:72)\n\tat org.openqa.selenium.remote.server.commandhandler.BeginSession.execute(BeginSession.java:65)\n\tat org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0(WebDriverServlet.java:235)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
-        "duration" : 66917393000,
-        "status" : "failed"
-      },
-      "match" : {
-        "location" : "com.test.stepdefs.InitialIT.getScenarioTags(io.cucumber.java.Scenario)"
-      }
-    } ],
-    "line" : 18,
-    "name" : "login registration",
-    "description" : "",
-    "id" : "ui-tests;login-registration;;3",
-    "after" : [ {
-      "result" : {
-        "duration" : 45394147000,
+        "duration" : 49419473000,
         "status" : "passed"
-      },
-      "match" : {
-        "location" : "com.test.stepdefs.InitialIT.closeBrowser()"
-      }
-    }, {
-      "result" : {
-        "duration" : 1305000,
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "com.test.stepdefs.TransformationTestsIT.getSingletonInstance()"
-      }
-    } ],
-    "type" : "scenario",
-    "keyword" : "Scenario Outline",
-    "steps" : [ {
-      "result" : {
-        "duration" : 4006000,
-        "status" : "skipped"
-      },
-      "line" : 12,
-      "name" : "I open the site \"https://www.way2automation.com/angularjs-protractor/registeration/#/login\"",
-      "match" : {
-        "arguments" : [ {
-          "val" : "\"https://www.way2automation.com/angularjs-protractor/registeration/#/login\"",
-          "offset" : 16
-        } ],
-        "location" : "com.test.stepdefs.InitialIT.OpenSite(java.lang.String)"
-      },
-      "after" : [ {
-        "result" : {
-          "duration" : 5918000,
-          "status" : "skipped"
-        },
-        "match" : {
-          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
-        }
-      } ],
-      "keyword" : "Given "
-    }, {
-      "result" : {
-        "duration" : 498000,
-        "status" : "skipped"
-      },
-      "line" : 13,
-      "name" : "I submit login details \"angular\" \"password\" \"testuserName2\"",
-      "match" : {
-        "arguments" : [ {
-          "val" : "\"angular\"",
-          "offset" : 23
-        }, {
-          "val" : "\"password\"",
-          "offset" : 33
-        }, {
-          "val" : "\"testuserName2\"",
-          "offset" : 44
-        } ],
-        "location" : "com.test.stepdefs.InitialIT.submitRegistration(java.lang.String,java.lang.String,java.lang.String)"
-      },
-      "after" : [ {
-        "result" : {
-          "duration" : 1543000,
-          "status" : "skipped"
-        },
-        "match" : {
-          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
-        }
-      } ],
-      "keyword" : "When "
-    } ],
-    "tags" : [ {
-      "name" : "@firefox"
-    } ]
-  } ],
-  "name" : "UI Tests",
-  "description" : "",
-  "id" : "ui-tests",
-  "keyword" : "Feature",
-  "uri" : "file:src/test/resources/com/test/InitialTest.feature",
-  "tags" : [ ]
-} , {
-  "line" : 1,
-  "elements" : [ {
-    "start_timestamp" : "2022-02-28T20:55:27.514Z",
-    "before" : [ {
-      "result" : {
-        "duration" : 508247000,
-        "status" : "passed"
-      },
-      "match" : {
-        "location" : "com.test.stepdefs.DriverFactory.getScenarioTags(io.cucumber.java.Scenario)"
-      }
-    }, {
-      "result" : {
-        "error_message" : "com.google.inject.ProvisionException: Unable to provision, see the following errors:\n\n1) Error injecting constructor, org.openqa.selenium.TimeoutException: Connection refused (os error 111)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'b92828449244', ip: '172.18.0.3', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'\nDriver info: driver.version: unknown\nremote stacktrace: \nCommand duration or timeout: 63.74 seconds\n  at com.test.support.Global.<init>(Global.java:29)\n  at com.test.support.Global.class(Global.java:29)\n  while locating com.test.support.Global\n    for field at com.test.stepdefs.InitialIT.global(InitialIT.java:31)\n  while locating com.test.stepdefs.InitialIT\n\n1 error\n\tat com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:226)\n\tat com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1097)\n\tat com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1131)\n\tat io.cucumber.guice.GuiceFactory.getInstance(GuiceFactory.java:45)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\n\tat io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)\n\tat io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)\n\tat io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:98)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\n\tat io.cucumber.core.runtime.Runtime.lambda$execute$5(Runtime.java:110)\n\tat io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)\n\tat io.cucumber.core.runtime.Runtime.lambda$execute$6(Runtime.java:110)\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:233)\n\tat java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)\n\tat io.cucumber.core.runtime.Runtime.lambda$run$2(Runtime.java:86)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:199)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1598)\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)\n\tat io.cucumber.core.runtime.Runtime.run(Runtime.java:87)\n\tat io.cucumber.core.cli.Main.run(Main.java:92)\n\tat io.cucumber.core.cli.Main.main(Main.java:34)\nCaused by: org.openqa.selenium.TimeoutException: Connection refused (os error 111)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'b92828449244', ip: '172.18.0.3', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'\nDriver info: driver.version: unknown\nremote stacktrace: \nCommand duration or timeout: 63.74 seconds\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)\n\tat com.test.support.FirefoxManager.createDriver(FirefoxManager.java:45)\n\tat com.test.support.FirefoxManager.getDriver(FirefoxManager.java:52)\n\tat com.test.stepdefs.DriverFactory.getManager(DriverFactory.java:48)\n\tat com.test.support.Global.<init>(Global.java:30)\n\tat com.test.support.Global$$FastClassByGuice$$574697b1.newInstance(<generated>)\n\tat com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:89)\n\tat com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)\n\tat com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)\n\tat com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:306)\n\tat com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)\n\tat io.cucumber.guice.SequentialScenarioScope.lambda$scope$0(SequentialScenarioScope.java:40)\n\tat com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:39)\n\tat com.google.inject.internal.SingleFieldInjector.inject(SingleFieldInjector.java:52)\n\tat com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:147)\n\tat com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:124)\n\tat com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)\n\tat com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:306)\n\tat com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1094)\n\t... 32 more\nCaused by: org.openqa.selenium.TimeoutException: Connection refused (os error 111)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'b92828449244', ip: '172.18.0.3', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'\nDriver info: driver.version: unknown\nremote stacktrace: \nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'Amits-MacBook-Air.local', ip: 'fe80:0:0:0:c0b:b01f:aad3:ad0b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '13.0.2'\nDriver info: driver.version: unknown\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\n\tat org.openqa.selenium.grid.session.remote.RemoteSession$Factory.performHandshake(RemoteSession.java:147)\n\tat org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply(ServicedSession.java:161)\n\tat org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12(ActiveSessionFactory.java:180)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.ReferencePipeline$11$1.accept(ReferencePipeline.java:440)\n\tat java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)\n\tat org.openqa.selenium.remote.server.ActiveSessionFactory.apply(ActiveSessionFactory.java:183)\n\tat org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2(NewSessionPipeline.java:66)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)\n\tat java.util.Collections$2.tryAdvance(Collections.java:4719)\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)\n\tat org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3(NewSessionPipeline.java:69)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.DistinctOps$1$2.accept(DistinctOps.java:175)\n\tat java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)\n\tat java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Streams.java:405)\n\tat java.util.stream.Streams$ConcatSpliterator.tryAdvance(Streams.java:728)\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)\n\tat org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession(NewSessionPipeline.java:72)\n\tat org.openqa.selenium.remote.server.commandhandler.BeginSession.execute(BeginSession.java:65)\n\tat org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0(WebDriverServlet.java:235)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
-        "duration" : 67132867000,
-        "status" : "failed"
       },
       "match" : {
         "location" : "com.test.stepdefs.InitialIT.getScenarioTags(io.cucumber.java.Scenario)"
@@ -372,7 +143,7 @@
     "id" : "ui-tests;login-registration;;2",
     "after" : [ {
       "result" : {
-        "duration" : 43173206000,
+        "duration" : 3601973000,
         "status" : "passed"
       },
       "match" : {
@@ -380,7 +151,7 @@
       }
     }, {
       "result" : {
-        "duration" : 2134000,
+        "duration" : 724000,
         "status" : "passed"
       },
       "match" : {
@@ -391,8 +162,8 @@
     "keyword" : "Scenario Outline",
     "steps" : [ {
       "result" : {
-        "duration" : 4049000,
-        "status" : "skipped"
+        "duration" : 18486273000,
+        "status" : "passed"
       },
       "line" : 12,
       "name" : "I open the site \"https://www.way2automation.com/angularjs-protractor/registeration/#/login\"",
@@ -405,8 +176,8 @@
       },
       "after" : [ {
         "result" : {
-          "duration" : 507000,
-          "status" : "skipped"
+          "duration" : 16465000,
+          "status" : "passed"
         },
         "match" : {
           "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
@@ -415,8 +186,8 @@
       "keyword" : "Given "
     }, {
       "result" : {
-        "duration" : 499000,
-        "status" : "skipped"
+        "duration" : 17702137000,
+        "status" : "passed"
       },
       "line" : 13,
       "name" : "I submit login details \"angular\" \"password\" \"testuserName\"",
@@ -435,8 +206,8 @@
       },
       "after" : [ {
         "result" : {
-          "duration" : 1774000,
-          "status" : "skipped"
+          "duration" : 4682000,
+          "status" : "passed"
         },
         "match" : {
           "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
@@ -457,10 +228,10 @@
 } , {
   "line" : 1,
   "elements" : [ {
-    "start_timestamp" : "2022-02-28T20:55:27.192Z",
+    "start_timestamp" : "2022-04-16T15:31:21.717Z",
     "before" : [ {
       "result" : {
-        "duration" : 485068000,
+        "duration" : 415702000,
         "status" : "passed"
       },
       "match" : {
@@ -468,21 +239,20 @@
       }
     }, {
       "result" : {
-        "error_message" : "com.google.inject.ProvisionException: Unable to provision, see the following errors:\n\n1) Error injecting constructor, org.openqa.selenium.TimeoutException: Connection refused (os error 111)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: '87dba3122541', ip: '172.18.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'\nDriver info: driver.version: unknown\nremote stacktrace: \nCommand duration or timeout: 66.23 seconds\n  at com.test.support.Global.<init>(Global.java:29)\n  at com.test.support.Global.class(Global.java:29)\n  while locating com.test.support.Global\n    for field at com.test.stepdefs.InitialIT.global(InitialIT.java:31)\n  while locating com.test.stepdefs.InitialIT\n\n1 error\n\tat com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:226)\n\tat com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1097)\n\tat com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1131)\n\tat io.cucumber.guice.GuiceFactory.getInstance(GuiceFactory.java:45)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\n\tat io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)\n\tat io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)\n\tat io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:98)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\n\tat io.cucumber.core.runtime.Runtime.lambda$execute$5(Runtime.java:110)\n\tat io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)\n\tat io.cucumber.core.runtime.Runtime.lambda$execute$6(Runtime.java:110)\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:233)\n\tat java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)\n\tat io.cucumber.core.runtime.Runtime.lambda$run$2(Runtime.java:86)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:199)\n\tat java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1598)\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)\n\tat io.cucumber.core.runtime.Runtime.run(Runtime.java:87)\n\tat io.cucumber.core.cli.Main.run(Main.java:92)\n\tat io.cucumber.core.cli.Main.main(Main.java:34)\nCaused by: org.openqa.selenium.TimeoutException: Connection refused (os error 111)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: '87dba3122541', ip: '172.18.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'\nDriver info: driver.version: unknown\nremote stacktrace: \nCommand duration or timeout: 66.23 seconds\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)\n\tat java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)\n\tat java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)\n\tat com.test.support.FirefoxManager.createDriver(FirefoxManager.java:45)\n\tat com.test.support.FirefoxManager.getDriver(FirefoxManager.java:52)\n\tat com.test.stepdefs.DriverFactory.getManager(DriverFactory.java:48)\n\tat com.test.support.Global.<init>(Global.java:30)\n\tat com.test.support.Global$$FastClassByGuice$$574697b1.newInstance(<generated>)\n\tat com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:89)\n\tat com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)\n\tat com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)\n\tat com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:306)\n\tat com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)\n\tat io.cucumber.guice.SequentialScenarioScope.lambda$scope$0(SequentialScenarioScope.java:40)\n\tat com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:39)\n\tat com.google.inject.internal.SingleFieldInjector.inject(SingleFieldInjector.java:52)\n\tat com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:147)\n\tat com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:124)\n\tat com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)\n\tat com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:306)\n\tat com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1094)\n\t... 32 more\nCaused by: org.openqa.selenium.TimeoutException: Connection refused (os error 111)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: '87dba3122541', ip: '172.18.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.25-linuxkit', java.version: '1.8.0_292'\nDriver info: driver.version: unknown\nremote stacktrace: \nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'Amits-MacBook-Air.local', ip: 'fe80:0:0:0:c0b:b01f:aad3:ad0b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '13.0.2'\nDriver info: driver.version: unknown\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\n\tat org.openqa.selenium.grid.session.remote.RemoteSession$Factory.performHandshake(RemoteSession.java:147)\n\tat org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply(ServicedSession.java:161)\n\tat org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12(ActiveSessionFactory.java:180)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.ReferencePipeline$11$1.accept(ReferencePipeline.java:440)\n\tat java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)\n\tat org.openqa.selenium.remote.server.ActiveSessionFactory.apply(ActiveSessionFactory.java:183)\n\tat org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2(NewSessionPipeline.java:66)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)\n\tat java.util.Collections$2.tryAdvance(Collections.java:4719)\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)\n\tat org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3(NewSessionPipeline.java:69)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.DistinctOps$1$2.accept(DistinctOps.java:175)\n\tat java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\n\tat java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)\n\tat java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Streams.java:405)\n\tat java.util.stream.Streams$ConcatSpliterator.tryAdvance(Streams.java:728)\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:531)\n\tat org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession(NewSessionPipeline.java:72)\n\tat org.openqa.selenium.remote.server.commandhandler.BeginSession.execute(BeginSession.java:65)\n\tat org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0(WebDriverServlet.java:235)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
-        "duration" : 69539510000,
-        "status" : "failed"
+        "duration" : 49846581000,
+        "status" : "passed"
       },
       "match" : {
         "location" : "com.test.stepdefs.InitialIT.getScenarioTags(io.cucumber.java.Scenario)"
       }
     } ],
-    "line" : 19,
+    "line" : 18,
     "name" : "login registration",
     "description" : "",
-    "id" : "ui-tests;login-registration;;4",
+    "id" : "ui-tests;login-registration;;3",
     "after" : [ {
       "result" : {
-        "duration" : 36243806000,
+        "duration" : 4267538000,
         "status" : "passed"
       },
       "match" : {
@@ -490,7 +260,7 @@
       }
     }, {
       "result" : {
-        "duration" : 1763000,
+        "duration" : 870000,
         "status" : "passed"
       },
       "match" : {
@@ -501,8 +271,8 @@
     "keyword" : "Scenario Outline",
     "steps" : [ {
       "result" : {
-        "duration" : 4824000,
-        "status" : "skipped"
+        "duration" : 17133005000,
+        "status" : "passed"
       },
       "line" : 12,
       "name" : "I open the site \"https://www.way2automation.com/angularjs-protractor/registeration/#/login\"",
@@ -515,8 +285,8 @@
       },
       "after" : [ {
         "result" : {
-          "duration" : 7035000,
-          "status" : "skipped"
+          "duration" : 19932000,
+          "status" : "passed"
         },
         "match" : {
           "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
@@ -525,8 +295,117 @@
       "keyword" : "Given "
     }, {
       "result" : {
-        "duration" : 530000,
-        "status" : "skipped"
+        "duration" : 19006653000,
+        "status" : "passed"
+      },
+      "line" : 13,
+      "name" : "I submit login details \"angular\" \"password\" \"testuserName2\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"angular\"",
+          "offset" : 23
+        }, {
+          "val" : "\"password\"",
+          "offset" : 33
+        }, {
+          "val" : "\"testuserName2\"",
+          "offset" : 44
+        } ],
+        "location" : "com.test.stepdefs.InitialIT.submitRegistration(java.lang.String,java.lang.String,java.lang.String)"
+      },
+      "after" : [ {
+        "result" : {
+          "duration" : 2313000,
+          "status" : "passed"
+        },
+        "match" : {
+          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+        }
+      } ],
+      "keyword" : "When "
+    } ],
+    "tags" : [ {
+      "name" : "@firefox"
+    } ]
+  } ],
+  "name" : "UI Tests",
+  "description" : "",
+  "id" : "ui-tests",
+  "keyword" : "Feature",
+  "uri" : "file:src/test/resources/com/test/InitialTest.feature",
+  "tags" : [ ]
+} , {
+  "line" : 1,
+  "elements" : [ {
+    "start_timestamp" : "2022-04-16T15:31:21.758Z",
+    "before" : [ {
+      "result" : {
+        "duration" : 591821000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.DriverFactory.getScenarioTags(io.cucumber.java.Scenario)"
+      }
+    }, {
+      "result" : {
+        "duration" : 48027821000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.InitialIT.getScenarioTags(io.cucumber.java.Scenario)"
+      }
+    } ],
+    "line" : 19,
+    "name" : "login registration",
+    "description" : "",
+    "id" : "ui-tests;login-registration;;4",
+    "after" : [ {
+      "result" : {
+        "duration" : 3394921000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.InitialIT.closeBrowser()"
+      }
+    }, {
+      "result" : {
+        "duration" : 916000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.TransformationTestsIT.getSingletonInstance()"
+      }
+    } ],
+    "type" : "scenario",
+    "keyword" : "Scenario Outline",
+    "steps" : [ {
+      "result" : {
+        "duration" : 22129663000,
+        "status" : "passed"
+      },
+      "line" : 12,
+      "name" : "I open the site \"https://www.way2automation.com/angularjs-protractor/registeration/#/login\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"https://www.way2automation.com/angularjs-protractor/registeration/#/login\"",
+          "offset" : 16
+        } ],
+        "location" : "com.test.stepdefs.InitialIT.OpenSite(java.lang.String)"
+      },
+      "after" : [ {
+        "result" : {
+          "duration" : 20553000,
+          "status" : "passed"
+        },
+        "match" : {
+          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+        }
+      } ],
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 17949559000,
+        "status" : "passed"
       },
       "line" : 13,
       "name" : "I submit login details \"angular\" \"password\" \"testuserName3\"",
@@ -545,8 +424,8 @@
       },
       "after" : [ {
         "result" : {
-          "duration" : 1923000,
-          "status" : "skipped"
+          "duration" : 2583000,
+          "status" : "passed"
         },
         "match" : {
           "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
@@ -556,6 +435,124 @@
     } ],
     "tags" : [ {
       "name" : "@firefox"
+    } ]
+  } ],
+  "name" : "UI Tests",
+  "description" : "",
+  "id" : "ui-tests",
+  "keyword" : "Feature",
+  "uri" : "file:src/test/resources/com/test/InitialTest.feature",
+  "tags" : [ ]
+} , {
+  "line" : 1,
+  "elements" : [ {
+    "start_timestamp" : "2022-04-16T15:31:22.141Z",
+    "before" : [ {
+      "result" : {
+        "duration" : 674162000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.DriverFactory.getScenarioTags(io.cucumber.java.Scenario)"
+      }
+    }, {
+      "result" : {
+        "duration" : 17254163000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.InitialIT.getScenarioTags(io.cucumber.java.Scenario)"
+      }
+    } ],
+    "line" : 42,
+    "name" : "Add a user and validate the user has been added to the table",
+    "description" : "",
+    "id" : "ui-tests;add-a-user-and-validate-the-user-has-been-added-to-the-table;;2",
+    "after" : [ {
+      "result" : {
+        "duration" : 1083299000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.InitialIT.closeBrowser()"
+      }
+    }, {
+      "result" : {
+        "duration" : 1762000,
+        "status" : "passed"
+      },
+      "match" : {
+        "location" : "com.test.stepdefs.TransformationTestsIT.getSingletonInstance()"
+      }
+    } ],
+    "type" : "scenario",
+    "keyword" : "Scenario Outline",
+    "steps" : [ {
+      "result" : {
+        "duration" : 14079494000,
+        "status" : "passed"
+      },
+      "line" : 37,
+      "name" : "I open the site \"http://www.way2automation.com/angularjs-protractor/webtables/\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"http://www.way2automation.com/angularjs-protractor/webtables/\"",
+          "offset" : 16
+        } ],
+        "location" : "com.test.stepdefs.InitialIT.OpenSite(java.lang.String)"
+      },
+      "after" : [ {
+        "result" : {
+          "duration" : 22130000,
+          "status" : "passed"
+        },
+        "match" : {
+          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+        }
+      } ],
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 45572995000,
+        "status" : "passed"
+      },
+      "line" : 38,
+      "name" : "I add  user with the following information \"TestFirstName\" \"TestLastName\" \"testusername\" \"test12345\" \"testuser@testcompany.com\" \"123-456-7890\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"TestFirstName\"",
+          "offset" : 43
+        }, {
+          "val" : "\"TestLastName\"",
+          "offset" : 59
+        }, {
+          "val" : "\"testusername\"",
+          "offset" : 74
+        }, {
+          "val" : "\"test12345\"",
+          "offset" : 89
+        }, {
+          "val" : "\"testuser@testcompany.com\"",
+          "offset" : 101
+        }, {
+          "val" : "\"123-456-7890\"",
+          "offset" : 128
+        } ],
+        "location" : "com.test.stepdefs.InitialIT.AddUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+      },
+      "after" : [ {
+        "result" : {
+          "duration" : 9913000,
+          "status" : "passed"
+        },
+        "match" : {
+          "location" : "com.test.stepdefs.RestAssuredIT.afterEveryStep()"
+        }
+      } ],
+      "keyword" : "When "
+    } ],
+    "tags" : [ {
+      "name" : "@chrome"
     } ]
   } ],
   "name" : "UI Tests",
