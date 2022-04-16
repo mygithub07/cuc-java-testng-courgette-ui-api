@@ -33,7 +33,7 @@ stages:
          goals: 'clean verify -P acceptanceTests -e'
          
      - task: PublishPipelineArtifact@1
-       displayName: Publish cucumber report
+       displayName: Publish cucumber html report
        inputs:
          pathToPublish: $(System.DefaultWorkingDirectory)/s/target/cucumber-report/
          artifactName: 'cucumber.html'
@@ -41,8 +41,8 @@ stages:
      - task: PublishPipelineArtifact@1
        displayName: Publish cucumber xml report
        inputs:
-       pathToPublish: $(System.DefaultWorkingDirectory)/s/target/cucumber-report/
-       artifactName: 'cucumber.xml'
+         pathToPublish: $(System.DefaultWorkingDirectory)/s/target/cucumber-report/
+         artifactName: 'cucumber.xml'
 
      - task: PublishTestResults@2
        inputs:
