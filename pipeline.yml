@@ -38,6 +38,12 @@ stages:
          pathToPublish: $(System.DefaultWorkingDirectory)/s/target/cucumber-report/
          artifactName: 'cucumber.html'
 
+     - task: PublishPipelineArtifact@1
+       displayName: Publish cucumber xml report
+       inputs:
+       pathToPublish: $(System.DefaultWorkingDirectory)/s/target/cucumber-report/
+       artifactName: 'cucumber.xml'
+
      - task: PublishTestResults@2
        inputs:
          testResultsFormat: 'JUnit'
