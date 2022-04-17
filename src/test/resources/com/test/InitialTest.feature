@@ -42,22 +42,22 @@ Feature: UI Tests
        |"TestFirstName" |"TestLastName" | "testusername"  |"test12345"|"testuser@testcompany.com"|"123-456-7890"|
         |"TestFirstName1" |"TestLastName1" | "testusername1"  |"test123456"|"testuser1@testcompany.com"|"123-456-1000"|
     
-  # @firefox 
-   #  Scenario: Add a user using pojo class in a scenario using data table and @DataTableType
-  #    Given I open the site "http://www.way2automation.com/angularjs-protractor/webtables/"
-   #    When I add  user with passing info to pojo class
-   #    |FirstName|LastName|username| password|Email|CellPhone|
-    #    |TestFirstName3 |TestLastName3 | testusername3  |test67890|testuser3@testcompany3.com|456-789-1122|
+   @firefox 
+     Scenario: Add a user using pojo class in a scenario using data table and @DataTableType
+      Given I open the site "http://www.way2automation.com/angularjs-protractor/webtables/"
+       When I add  user with passing info to pojo class
+       |FirstName|LastName|username| password|Email|CellPhone|
+       |TestFirstName3 |TestLastName3 | testusername3  |test67890|testuser3@testcompany3.com|456-789-1122|
       
- # Scenario Outline: Add a user using pojo class in scenario outline using @ParameterType
+  Scenario Outline: Add a user using pojo class in scenario outline using @ParameterType
    
-     #  Given I open the site "http://www.way2automation.com/angularjs-protractor/webtables/"
-     #  When I add  user by passing <userInfo> to pojo class from scenario outline
-     #  Then I see user <userInfo> added to the table
-     #   Examples:
-      #  |userInfo|
-     #   |TestFirstName4,TestLastName4,testusername4,test98760,testuser4@testcompany4.com,7890-123-2233|
-     #   |TestFirstName5,TestLastName5,testusername5,test67890,testuser5@testcompany5.com,456-789-1122|
+       Given I open the site "http://www.way2automation.com/angularjs-protractor/webtables/"
+       When I add  user by passing <userInfo> to pojo class from scenario outline
+       Then I see user <userInfo> added to the table
+        Examples:
+        |userInfo|
+        |TestFirstName4,TestLastName4,testusername4,test98760,testuser4@testcompany4.com,7890-123-2233|
+        |TestFirstName5,TestLastName5,testusername5,test67890,testuser5@testcompany5.com,456-789-1122|
   
   
   # Scenario Outline: Delete user and validate user has been deleted
