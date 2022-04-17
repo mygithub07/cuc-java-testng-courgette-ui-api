@@ -55,7 +55,7 @@ stages:
          testResultsFormat: 'JUnit'
          searchFolder: '$(System.DefaultWorkingDirectory)'
          publishJUnitResults: true
-         testResultsFiles: '**/target/cucumber-report/cucumber.xml'
+         testResultsFiles: '$(System.DefaultWorkingDirectory)/s/target/cucumber.xml'
          
          
      - task: PublishCucumberReport@1
