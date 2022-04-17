@@ -49,6 +49,7 @@ Feature: UI Tests
        |FirstName|LastName|username| password|Email|CellPhone|
        |TestFirstName3 |TestLastName3 | testusername3  |test67890|testuser3@testcompany3.com|456-789-1122|
       
+  @chrome
   Scenario Outline: Add a user using pojo class in scenario outline using @ParameterType
    
        Given I open the site "http://www.way2automation.com/angularjs-protractor/webtables/"
