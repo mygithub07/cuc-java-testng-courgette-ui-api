@@ -45,7 +45,7 @@ stages:
          artifactName: 'cucumber.xml'
 
      - task: PublishPipelineArtifact@1
-       displayName: Publish cucumber xml report
+       displayName: Publish cucumber json report
        inputs:
          pathToPublish: $(System.DefaultWorkingDirectory)/s/target/cucumber-report/
          artifactName: 'cucumber.json'
@@ -55,7 +55,7 @@ stages:
          testResultsFormat: 'JUnit'
          searchFolder: '$(System.DefaultWorkingDirectory)'
          publishJUnitResults: true
-         testResultsFiles: '$(System.DefaultWorkingDirectory)/s/target/cucumber.xml'
+         testResultsFiles: '**/target/cucumber-report/cucumber.xml'
          
          
      - task: PublishCucumberReport@1
